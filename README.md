@@ -1,3 +1,9 @@
-# My Awesome Book
+# The buildo book
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
+> You can’t have great software without a great team, and most software teams behave like dysfunctional families 
+--  Jim McCarthy
+
+Anyone with a laptop can write code. This is not what this book is about.
+
+This book is about writing high-quality software. It's about doing so with people you trust and respect. And it's about doing all that, in a smart and efficient way.
