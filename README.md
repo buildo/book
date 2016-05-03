@@ -17,15 +17,15 @@ Designing for success means trying to make the success case the easiest to achie
 Here's an example: you need to make sure a power plug is inserted in the right way, or you'll face many problems.
 How can you prevent the mistake to happen?
 
-You have a number strategies available.
+You have a number strategies available:
 
-You could label one side of the plug, so that it's easy for people to know how to insert it.
+- you could label one side of the plug, so that it's easy for people to know how to insert it;
 
-Or you can put a sign next to every power outlet.
+- or you can put a sign next to every power outlet;
 
-Or you can define a process for plug insertion, hold a meeting, explain the process to everyone and inflict sanctions on those who fail at following it.
+- or you can define a process for plug insertion, hold a meeting, explain the process to everyone and inflict sanctions on those who fail at following it;
 
-Or you can do this:
+- or you can do this:
 
 
 
