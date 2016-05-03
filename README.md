@@ -37,4 +37,4 @@ The UK power plug is designed for success.
 
 While the parallelism with software development may seem far-fetched, this is what we do at buildo.
 
-We want dangerous cases to be explicit, we want errors hard to achieve and - ultimately - we want the success case to be the default.
+We want dangerous cases to be explicit, we want errors to be difficult to achieve and - ultimately - we want the success case to be the default one.
