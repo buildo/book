@@ -1,7 +1,7 @@
 # Summary
 
 - [Workflow](workflow/README.md)
-  - [GitHub Workflow](workflow/github-workflow.md)
+  - [GitHub Workflow](workflow/1.github-workflow.md)
   - [Issues](workflow/2.issues.md)
   - [Pull Requests](workflow/3.pull-requests.md)
   - [hophop](workflow/4.hophop.md)
