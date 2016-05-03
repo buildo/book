@@ -8,4 +8,5 @@
   - [hophop](workflow/4.hophop.md)
   - [nemobot](workflow/5.nemobot.md)
   - [workflow-pal](workflow/6.workflow-pal.md)
-  - [bitbar](workflow/bitbar.md)
+  - [bitbar](workflow/7.bitbar.md)
+  - [prisma](workflow/8.prisma.md)
