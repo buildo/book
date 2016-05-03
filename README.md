@@ -14,7 +14,7 @@ At buildo we believe in a simple concept: design for success.
 And no, it's not a cheesy motivational motto.
 Designing for success means trying to make the success case the easiest to achieve.
 
-Suppose you'll face problems if a power plug is inserted in a wrong way.
+Here's an example: you need to make sure a power plug is inserted in the right way, or you'll face many problems.
 How can you prevent the mistake to happen?
 
 You have a number strategies available.
