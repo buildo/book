@@ -10,6 +10,7 @@ This book is about writing high-quality software. It's about doing so with peopl
 
 ## Design for success
 At buildo we believe in a simple concept: design for success.
+
 And no, it's not a cheesy motivational motto.
 Designing for success means trying to make the success case the easiest to achieve.
 
