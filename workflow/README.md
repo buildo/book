@@ -1,4 +1,4 @@
-## Workflow
+# Workflow
 This chapter is about our development workflow.
 
 Following the spirit of *design for success* we constantly strive to make the workflow both correct and easy to follow.
