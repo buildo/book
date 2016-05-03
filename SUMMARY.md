@@ -1,5 +1,6 @@
 # Summary
 
+- [Code of Conduct](CoC.md)
 - [Workflow](workflow/README.md)
   - [GitHub Workflow](workflow/1.github-workflow.md)
   - [Issues](workflow/2.issues.md)
