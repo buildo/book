@@ -19,7 +19,7 @@ How can you prevent the mistake to happen?
 
 You have a number strategies available.
 
-You could label the right side of the plug, so that it's easy for people to know how to insert it.
+You could label one side of the plug, so that it's easy for people to know how to insert it.
 
 Or you can put a sign next to every power outlet.
 
