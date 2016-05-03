@@ -12,3 +12,8 @@ Recursion is a bitch.
 
 
 ![](bdc095be-9cfe-11e5-8bff-bad52f611b3d.png)
+
+
+Like everything in buildo, nothing is set in stone. CoC reflects  values we believe in. If we change our minds as a team, we'll change this.
+
+Everyone is more than welcome to propose changes to the CoC.
