@@ -15,9 +15,9 @@ And no, it's not a cheesy motivational motto.
 Designing for success means trying to make the success case the easiest to achieve.
 
 Here's an example: you need to make sure a power plug is inserted in the right way, or you'll face many problems.
-How can you prevent the mistake to happen?
+How can you prevent the mistake from happening?
 
-You have a number strategies available:
+You have a number of strategies available:
 
 - you could label one side of the plug, so that it's easy for people to know how to insert it;
 
@@ -32,7 +32,7 @@ You have a number strategies available:
 ![](http://www.schurter.com/var/schurter/storage/ilcatalogue/files/image/datasheet/IM0010572_large.jpg)
 
 
-There's only one way of using it, and it's the right way. Anyone finds it natural and easy to use, and they don't even need to be aware the possibility of the mistake.
+There's only one way of using it, and it's the right way. Anyone finds it natural and easy to use, and they don't even need to be aware the possibility of mistake.
 
 The UK power plug is designed for success.
 
