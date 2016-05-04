@@ -8,7 +8,7 @@ Guidelines provided here should be applicable to projects of various dimensions.
 
 If your project is made up a few views and/or has just "POC" goals, this chapter is *probably*[^1] not for you. You're invited to enter the world of jsfiddle and copy&paste scripts instead :P
 
-In the following we'll cover all of the following, and maybe something more:
+In the following we'll cover all of this (and maybe something more):
  - JavaScript
  - React and its ecosystem
  - Our internal JS and react toolset
