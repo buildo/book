@@ -1,2 +1,12 @@
-# First-party web libraries
+# First-party js libraries
 
+discuss our own efforts in reusable libraries, mainly in "js" (not sure about the title)
+
+examples:
+  - metarpheus / metarpheus-tcomb
+  - b-r-c
+  - flexview
+  - avenger
+  - state handling
+  - various component helpers (decorators, formerly known as revenge)
+  - polifemo (we might want to write a chapter about testing, but not enough meat for now I think)
