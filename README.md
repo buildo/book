@@ -32,7 +32,7 @@ You have a number of strategies available:
 ![](http://www.schurter.com/var/schurter/storage/ilcatalogue/files/image/datasheet/IM0010572_large.jpg)
 
 
-There's only one way of using it, and it's the right way. Anyone finds it natural and easy to use, and they don't even need to be aware the possibility of mistake.
+There's only one way of using it, and it's the right way. Anyone finds it natural and easy to use, and they don't even need to be aware of the possibility of mistake.
 
 The UK power plug is designed for success.
 
