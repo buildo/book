@@ -13,5 +13,6 @@
    * [prisma](workflow/8.prisma.md)
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
+   * React
 * [Back-end development](backend/README.md)
 
