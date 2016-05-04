@@ -15,5 +15,6 @@
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
    * [React](frontend/2.react.md)
    * [First-party js libraries](frontend/first-party_js_libraries.md)
+   * Guidelines
 * [Back-end development](backend/README.md)
 
