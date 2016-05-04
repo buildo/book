@@ -14,5 +14,6 @@
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
    * [React](frontend/2.react.md)
+   * First-party web libraries
 * [Back-end development](backend/README.md)
 
