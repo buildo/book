@@ -12,6 +12,6 @@
    * [bitbar](workflow/7.bitbar.md)
    * [prisma](workflow/8.prisma.md)
 * [Front-end development](frontend/readme.md)
-   * 1.javascript-at-buildo.md
+   * JavaScript at buildo
 * [Back-end development](backend/README.md)
 
