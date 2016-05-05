@@ -14,7 +14,7 @@
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
        * [ESWat](frontend/1.eswat.md)
-       * Code Conventions and Linting
+       * [Code Conventions and Linting](frontend/2.code_conventions_and_linting.md)
    * [React](frontend/2.react.md)
    * [First-party js libraries](frontend/3.first-party_js_libraries.md)
    * [Guidelines](frontend/4.guidelines.md)
