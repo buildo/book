@@ -13,7 +13,7 @@
    * [prisma](workflow/8.prisma.md)
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
-       * [ESWat](frontend/1.eswat.md)
+       * [ESWat](frontend/javascript/1.eswat.md)
        * [Code Conventions and Linting](frontend/2.code_conventions_and_linting.md)
        * [Typing JS](frontend/3.typing_js.md)
    * [React](frontend/2.react.md)
