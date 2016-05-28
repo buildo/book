@@ -21,6 +21,6 @@
    * [Guidelines](frontend/4.guidelines.md)
        * [General Structure](frontend/guidelines/1.general_structure.md)
        * [Components](frontend/guidelines/2.components.md)
-       * tcomb
+       * [tcomb](frontend/guidelines/3.tcomb.md)
 * [Back-end development](backend/README.md)
 
