@@ -20,6 +20,6 @@
    * [First-party js libraries](frontend/3.first-party_js_libraries.md)
    * [Guidelines](frontend/4.guidelines.md)
        * [General Structure](frontend/guidelines/1.general_structure.md)
-       * Components
+       * [Components](frontend/guidelines/2.components.md)
 * [Back-end development](backend/README.md)
 
