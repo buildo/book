@@ -10,8 +10,8 @@ If your project is made up a few views and/or has just "POC" goals, this chapter
 
 In the following we'll cover all of this (and maybe something more):
  - [JavaScript](./1.javascript_at_buildo.md)
- - React and its ecosystem
- - Our internal JS and react toolset
+ - [React and its ecosystem](./2.react.md)
+ - [Our internal JS and react toolset](./3.first-party_js_libraries.md)
  - Guidelines on how to structure a react application
 
 
