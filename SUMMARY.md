@@ -19,5 +19,6 @@
    * [React](frontend/2.react.md)
    * [First-party js libraries](frontend/3.first-party_js_libraries.md)
    * [Guidelines](frontend/4.guidelines.md)
+       * General Structure
 * [Back-end development](backend/README.md)
 
