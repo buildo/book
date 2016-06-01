@@ -22,6 +22,5 @@
        * [General Structure](frontend/guidelines/1.general_structure.md)
        * [Components](frontend/guidelines/2.components.md)
        * [tcomb](frontend/guidelines/3.tcomb.md)
-* Product Management
 * [Back-end development](backend/README.md)
 
