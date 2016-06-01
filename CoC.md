@@ -47,3 +47,20 @@ To keep track of commitments, we don't yet have a standard way. Suggested tools 
 - Trello boards (remember to have a due date on the card)
 
 All such tools are good, as long as the commitment is written down and visible to both requester and performer.
+
+## Share notes after meetings
+
+A key aspect of good collaboration is alignment among team members. Alignment of goals, alignment of information. Sharing notes after meetings serves two purposes:
+
+1. Inform people who were not present at the meeting
+2. Recap in written format the key outcomes and decisions of the meeting
+
+For project related meetings, use the project mailing lists (typically `project-name@buildo.io`). You can find a list and manage your subscriptions [here](https://groups.google.com/a/buildo.io/forum/#!overview). To update on R&D, use the `buildo/core` issue. You can also use slack for quick updates.
+
+If the meeting contains action points, try to write them in the form of commitments. Clearly specify the task content and the due date.
+
+## Work together.. at the same time
+
+We like to work together, it's more fun and more productive. Typically we start between 9am and 10am, and finish up between 6pm and 7pm.
+
+Organize meetings after 10am and before 6pm to make sure everyone attends, and try to avoid lunch time (1:30pm till 2:30pm).
