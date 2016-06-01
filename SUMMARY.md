@@ -23,5 +23,5 @@
        * [Components](frontend/guidelines/2.components.md)
        * [tcomb](frontend/guidelines/3.tcomb.md)
 * [Back-end development](backend/README.md)
-* Product Management
+* [Product Management](the_meaning_of_PM.md)
 
