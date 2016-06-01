@@ -55,7 +55,7 @@ A key aspect of good collaboration is alignment among team members. Alignment of
 1. Inform people who were not present at the meeting
 2. Recap in written format the key outcomes and decisions of the meeting
 
-For project related meetings, use the project mailing lists (typically `project-name@buildo.io`). You can find a list and manage your subscriptions [here](https://groups.google.com/a/buildo.io/forum/#!overview). To update on R&D, use the `buildo/core` issue. You can also use slack for quick updates.
+For project related meetings, use the project mailing lists (typically `project-name@buildo.io`). You can discover and subscribe to mailing lists in [GAPS](https://gaps.our.buildo.io/subs#) or directly in [google groups](https://groups.google.com/a/buildo.io/forum/#!overview). To update on R&D, use the `buildo/core` issue. You can also use slack for quick updates.
 
 If the meeting contains action points, try to write them in the form of commitments. Clearly specify the task content and the due date.
 
