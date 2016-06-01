@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Code of Conduct](CoC.md)
+* [prisma](workflow/8.prisma.md)
 * [Workflow](workflow/README.md)
    * [GitHub Workflow](workflow/1.github-workflow.md)
    * [Issues](workflow/2.issues.md)
@@ -10,7 +11,6 @@
    * [nemobot](workflow/5.nemobot.md)
    * [workflow-pal](workflow/6.workflow-pal.md)
    * [bitbar](workflow/7.bitbar.md)
-* [prisma](workflow/8.prisma.md)
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
        * [ESWat](frontend/javascript/1.eswat.md)
