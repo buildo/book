@@ -64,3 +64,9 @@ If the meeting contains action points, try to write them in the form of commitme
 We like to work together, it's more fun and more productive. Typically we start between 9am and 10am, and finish up between 6pm and 7pm.
 
 Organize meetings after 10am and before 6pm to make sure everyone attends, and try to avoid lunch time (1:30pm till 2:30pm).
+
+## Prefer small things that you complete to big, long lasting tasks
+
+This is a general principle, and it helps a lot. You can see it in effect with GitHub issues (we keep them small), iteration planning, size of features in development, etc.
+
+A good way to see if your really doing small things, and keeping the "flow", is to count your WIP (work in progress). We do this in GitHub with the WIP label, but you can do it with everything you do. The goal is to keep low WIP and high throughput. This is *flow*.
