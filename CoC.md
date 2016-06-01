@@ -24,3 +24,26 @@ Meetings live in Google Calendar. If you want someone to join a meeting, remembe
 For bigger meetings in particular, prefer "loft 2" as the meeting area. There, you are free to talk aloud and discuss using whiteboards. If you specify the meeting area, people will more likely be there on time.
 
 To remind yourself of a meeting, you can use Google Calendar on your phone, or enable the Slack integration [here](https://buildo.slack.com/services/gcalendar).
+
+## Commit only to what you are going to do
+
+A commitment is created when two people, the performer and the requester, agree that one will do something for the other within a certain time.
+
+A commitment should always be clearly put, and these attributes should be clear:
+
+- Requester: the person who requested the task, and who accepts it when completed.
+- Performer: the person who's responsible for the execution of the task, and who notifies the requester when done.
+- Task: a clear specification of all that should be done.
+- Due date: a date by which the task will be completed.
+
+Consider this a negotiation, not an order. Both performer and requester must agree on the commitment.
+
+Remember to notify the other if things change. In particular if something happens and the commitment cannot be hold.
+
+To keep track of commitments, we don't yet have a standard way. Suggested tools are:
+
+- Slack reminders (which you can set on others, too)
+- Emails (you can use RightInbox to set reminders, or Google Tasks to convert emails into tasks with due dates)
+- Trello boards (remember to have a due date on the card)
+
+All such tools are good, as long as the commitment is written down and visible to both requester and performer.
