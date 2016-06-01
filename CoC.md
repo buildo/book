@@ -2,7 +2,6 @@
 
 We have a very succinct code of conduct.
 
-For the curious, here's the original document we used to discuss it: https://paper.dropbox.com/doc/code-of-conduct-VnfduvHgNmOY0v3xqfnNC
 
 As you can see, there were many points discussed, but we picked the top 5 so that we can really commit to them. This is exactly in the spirit of the second point of the CoC itself.
 
@@ -12,6 +11,7 @@ Recursion is a bitch.
 Like everything in buildo, nothing is set in stone. CoC reflects  values we believe in. If we change our minds as a team, we'll change this.
 
 Everyone is more than welcome to propose changes to the CoC.
+
 
 In the next sessions we'll give suggestions on how to follow the CoC with the help of tools.
 
@@ -70,3 +70,7 @@ Organize meetings after 10am and before 6pm to make sure everyone attends, and t
 This is a general principle, and it helps a lot. You can see it in effect with GitHub issues (we keep them small), iteration planning, size of features in development, etc.
 
 A good way to see if your really doing small things, and keeping the "flow", is to count your WIP (work in progress). We do this in GitHub with the WIP label, but you can do it with everything you do. The goal is to keep low WIP and high throughput. This is *flow*.
+
+---
+
+For the curious ones, here's the original document we used to discuss it: https://paper.dropbox.com/doc/code-of-conduct-VnfduvHgNmOY0v3xqfnNC
