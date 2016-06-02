@@ -25,4 +25,8 @@
 * [Back-end development](backend/README.md)
 * [Product Management](product_management/README.md)
   * [PRISMA flow](product_management/prisma_flow.md)
+    * [Customer requests workflow](product_management/customer_requests_workflow.md)
+    * [Backlog grooming workflow](product_management/backlog_grooming_workflow.md)
+    * [Dev workflow](product_management/dev_workflow.md)
+    * [Q.A. workflow](product_management/QA_workflow.md)
 
