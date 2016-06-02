@@ -32,3 +32,7 @@ The PRISMA flow is a template on which to build your specific product developmen
 - are fully discussed and shared with the development team and the customer
 
 Let's get serious:
+
+![](PRISMA flow.png)
+
+
