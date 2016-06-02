@@ -30,7 +30,7 @@ It's a 2 step process:
 1. understand the real business need
 2. design a solution
 
-We won't go into detail for the second step, as we don't have yet some magic guideline to help you do a good and efficient design.
+We won't go into detail for the second step, as we don't have yet some magic guideline to help you do good design.
 
 On the contrary, understanding the real business need might seem trivial, but requires practice and can have devastating results if not taken seriously.
 
