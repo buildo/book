@@ -18,7 +18,7 @@ The PRISMA flow is a template on which to build your specific product developmen
 
 This is the complete PRISMA flow:
 
-![](../PRISMA flow.png)
+![](PRISMA flow.png)
 It's divided into 4 sub workflows:
 
 - customer requests workflow
