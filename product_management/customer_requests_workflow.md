@@ -49,30 +49,19 @@ We face this problem all the time with our customers. They have a problem, which
 At times the solution is the perfect one, but in general it will be sub-optimal in terms of efficiency and effectiveness.
 
 ### Solutions to the XY problem
+Just look for the most upvoted comment, of course:
 
-### Practical example
+![](5whys.png)
 
-    - client: I want a signup form and a profile page!!
-    - PO: why do you want a signup form?
-    - client: so that people can sign up and have their profile page //this is not a business need
-    - PO: why should people have a profile page?
-    - because they need to easily find their previous contracts //this is a business need, but not really basic because it doesn’t touch basic things such as retention, revenue, etc..?
-    - PO: why do they need to easily find previous contracts?
-    - client: because they already put information in those contracts, such as maybe a client they collaborate with a lot, and they can easily find such information and use it in new contracts
-    - PO: ok, so your need is to optimize the experience of creating new contracts, by facilitating information retrieval, so that more people will complete a contract and sales will increase. Correct?
-    - client: yes yes, and maybe if you have previous contracts you can click “duplicate” and use them as templates.
-    - PO: sure, let me think about this a bit more (PO asks a dev or does himself some data gathering about how much data is actually reused, tries to validate the client’s assumptions with data and if not possible, says this to the client and makes it clear that they’re working on an assumption)
-    - PO again: one last question.. we actually started from you wanting to have a profile page and a signup system. What other use cases does it serve? 
-    - client: password reset can be in the profile
-    - PO: of course (secretly thinks: if there is no signup, there is no password reset => this is a typical scenario when, because of a light decision at the beginning, complexity grows and it seems necessary..), what else?
-    - client: nothing, that was the need mostly..
-    - PO: maybe to redownload previous contracts?
-    - client: yes, also. they can also do that from the email where we have the big download button, but we should put that in the profile also if we can
-    - PO: ok thanks, I’ll get back to you
-      - PO now has a clear understanding of the business need, he also needs:
-        - understanding of the product features (how to exploit)
-        - understanding of the implementation complexity of every change idea
-        - understanding of the product roadmap
-      - PO realizes that, just by adding a “use as template” button to the emails where the contract is sent, next to the “download” button (which the client says it’s working fine btw), you get all the advantages you want for 1/100 of the cost, you don’t add complexity, you don’t disrupt existing customers etc..
-      - PO suggests this solution to the client, who loves it and is happy because he saves money and can go on with other features. Buildo is happy because if our customers are happy they keep paying higher than average wages to buildo per day :p
+The [5 Whys technique](https://en.wikipedia.org/wiki/5_Whys) is typically used to find the root cause of a problem in a chain of cause-effect.
+
+We can follow a similar approach, asking our customer **why** they need a push notification system. And when they tell you "to let users know this happened", ask **why** they need to know. And when you discover that they need to know so that they can react right away, ask **why** they need to react so quickly. After only 3 whys, you might discover that a reaction time of 1 week is perfectly fine. 
+
+And you can simply add an email to the existing email notification module. Turns out the customer solution was inefficient.
+
+Or maybe they want to add an additional field in a form, **why**? *Because we need that information.* **Why**? *Because from that information we get relevant metrics.* And you say.. *do you know how many people actually complete those extra fields? 5%*.
+
+Ah.
+
+Well, turns out we need to do something much more complex and costly to get that information. In this case, the customer solution was not effective.
 
