@@ -31,8 +31,15 @@ The PRISMA flow is a template on which to build your specific product developmen
 - are specified in written form
 - are fully discussed and shared with the development team and the customer
 
-Let's get serious:
+This is the complete PRISMA flow:
 
 ![](PRISMA flow.png)
+It's divided into 4 sub workflows:
 
+- customer requests workflow
+- backlog grooming workflow
+- dev workflow
+- Q.A. workflow
+
+The following 4 sections describe these workflows and their guidelines.
 
