@@ -55,6 +55,10 @@ When you write requirements in GitHub, your job is to make sure that they are:
 
 **[BAD]** If your requirements are incomplete, inconsistent and also with little details, the developer will typically complain and ask you to improve them.
 
-**[DANGER]** If you requirements are incomplete, inconsistent but with a lot of details, the developer will typically go and implement something **broken by design ®**. This is because **detail is a proxy for quality, but often a false friend**. Always remember that, if you want to provide a lot of details, your effort to keep requirements complete and consistent will grow likewise.
+**[DANGER]** If you requirements are incomplete, inconsistent but with a lot of details, the developer will typically go and implement something **broken by design ®**. This is because **detail is a false proxy for completeness and consistency**. Always remember that, if you want to provide a lot of details, your effort to keep requirements complete and consistent will grow likewise.
+
+**[OK]** If you requirements are complete, consistent and have a level of detail that make the issue actionable for the developer, they are OK. The key here is to know your developers, and strive to provide the right level of detail. 
+If you give more, you're missing out on the developer's abilities and failing to trust and delegate. 
+If you give less, you're making it too hard for developers to implement and inevitably causing many roundtrips of questions in the future.
 
 ## Estimating and managing priorities
