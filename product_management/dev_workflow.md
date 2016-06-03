@@ -24,3 +24,20 @@ To help visualize the current milestone, you can use the [milestone overview too
 This is the development flow. Only two things must be highlighed from a PM perspective:
 - **testing** is done via test plans: **the first and most important Q.A. step is on developers**.
 - **deploy** on the test environment is essential for PMs and customers to test: it's mandatory and should be automated.
+
+## Internal defect flow
+
+In products with large teams, the PM might not able to track all issues and assure they get completed. In this case, we can use the (optional) internal defect flow.
+
+1. **Developers can open issues in GitHub and let them stay there**
+  - in the simple flow, developers can only open issues if they are going to close them soon after
+2. **PMs can open issues for small defects in GitHub and not track them in Trello**
+  - in the simple flow all defects must be tracked in Trello
+3. **The dev lead must limit the total number of open internal issues**
+  - in the simple flow typically there is no dev lead, all tracking is done by the PM
+
+As a rule of thumb, an issue should be internal if it is:
+- DX (developer experience)
+- a minor refactor (does not impact greatly on dev planning)
+- a minor defect filed by a developer
+- a serious bug reported and solved by developers within a short time (hours, maximum a few days)
