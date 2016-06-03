@@ -76,3 +76,9 @@ This is not a perfect estimation system because:
 - we don't do blind estimation with many people involved
 
 This is fine, our goal here is to provide high level guidance to the customer about what takes long, and what doesn't.
+
+## PM defect buffer
+
+Actionable requests from the customer are not the only thing to be converted to issues and estimated. Defects that come from Q.A. follow the same workflow.
+
+These are only the defects that we want to expose to the customer and PM for tracking. For smaller defects, refactors, DX improvements, etc... we can use the "internal defect" flow in GitHub.
