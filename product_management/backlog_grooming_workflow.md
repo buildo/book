@@ -18,6 +18,16 @@ At the opposite side, for "teams" with a single person doing PM and dev this ste
 
 ### Requirements and Specs
 
-As described in the chapter on [Development Workflow](/workflow/README.md)
+As described in the chapter on [Development Workflow](../workflow/README.md), GitHub issues are typically written in the form or **requirements** and **specs**.
+
+In the "prepare for dev" step, we write the requirements. The specs will be written by the developer assigned to the issue.
+
+As usual, this is not 100% applicable. There are times when you want to suggest some specs, or cannot provide complete requirements. In that case, use explicit words such as **DRAFT** or **suggestion** to mark those exceptions.
+
+**What is the difference between requirements and specs?**
+
+As ususal, let's read the [first answer](http://programmers.stackexchange.com/questions/121289/what-is-the-difference-between-requirements-and-specifications) on stackexchange:
+
+> requirements are what your program should do, the specifications are how you plan to do it.
 
 ## Estimating and managing priorities
