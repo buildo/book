@@ -47,4 +47,5 @@ You can see the product development process as a progressive refinement of requi
 ### Requirements quality and detail
 
 
+
 ## Estimating and managing priorities
