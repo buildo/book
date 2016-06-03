@@ -44,8 +44,17 @@ Specs are a description of what to build *written after requirements*, with *hig
 
 You can see the product development process as a progressive refinement of requirements into specs, first as cards "to be discussed" that become "actionable requests", then in GitHub issues. Same concepts apply.
 
-### Requirements quality and detail
+### Completeness, consistency and detail
 
+When you write requirements in GitHub, your job is to make sure that they are:
+- **complete** with respect to the requirements in Trello
+- **consistent** internally, and with the existing product
+- with the **right level of detail** for the assigned developer
 
+![](reqs_quality_detail.png)
+
+**[BAD]** If your requirements are incomplete, inconsistent and also with little details, the developer will typically complain and ask you to improve them.
+
+**[DANGER]** If you requirements are incomplete, inconsistent but with a lot of details, the developer will typically go and implement something **broken by design ®**. This is because **detail is a proxy for quality, but often a false friend**. Always remember that, if you want to provide a lot of details, your effort to keep requirements complete and consistent will grow likewise.
 
 ## Estimating and managing priorities
