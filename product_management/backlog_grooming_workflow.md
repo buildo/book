@@ -62,3 +62,17 @@ If you give more, you're missing out on the developer's abilities and failing to
 If you give less, you're making it too hard for developers to implement and inevitably causing many roundtrips of questions in the future.
 
 ## Estimating and managing priorities
+
+The customer handles priorities. However, we need to give an idea of the effort required so that they can prioritize.
+
+All cards in backlog should have an **effort label**. Typically we have:
+
+![](effort_label.png)
+
+Effort labels can be set by the PM, dev lead or asking directly to developers. It depends on the team.
+
+This is not a perfect estimation system because:
+- we don't incorporate feedback, as we're not tracking implementation time
+- we don't do blind estimation with many people involved
+
+This is fine, our goal here is to provide high level guidance to the customer about what takes long, and what doesn't.
