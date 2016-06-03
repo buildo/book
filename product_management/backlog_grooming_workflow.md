@@ -30,4 +30,21 @@ As ususal, let's read the [first answer](http://programmers.stackexchange.com/qu
 
 > requirements are what your program should do, the specifications are how you plan to do it.
 
+Ehm.. sure, but it just doesn't work like that :( It's difficult to distinguish the what from the how, it depends on:
+
+- the level of detail of the issue
+- the person that wrote the issue (more tech or more PM?)
+- the issue assignee (how much do they know the product?)
+- ...
+
+The definition we use in buildo is:
+
+**Requirements are a description of what to build.
+Specs are a description of what to build *written after requirements*, with *higher level of detail* and typically by the person who implements.**
+
+You can see the product development process as a progressive refinement of requirements into specs, first as cards "to be discussed" that become "actionable requests", then in GitHub issues. Same concepts apply.
+
+### Requirements quality and detail
+
+
 ## Estimating and managing priorities
