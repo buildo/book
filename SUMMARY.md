@@ -9,8 +9,9 @@
    * [hophop](workflow/4.hophop.md)
    * [nemobot](workflow/5.nemobot.md)
    * [workflow-pal](workflow/6.workflow-pal.md)
-   * [bitbar](workflow/7.bitbar.md)
+   * [bitbar plugins](workflow/7.bitbar-plugins.md)
    * [PRISMA](workflow/8.prisma.md)
+>>>>>>> master
 * [Front-end development](frontend/readme.md)
    * [JavaScript at buildo](frontend/1.javascript_at_buildo.md)
        * [ESWat](frontend/javascript/1.eswat.md)
