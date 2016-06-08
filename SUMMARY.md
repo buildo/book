@@ -24,7 +24,7 @@
        * [tcomb](frontend/guidelines/3.tcomb.md)
    * [Tutorial](frontend/tutorial.md)
        * [Step 0](frontend/tutorial/step_0.md)
-       * Step 1
+       * [Step 1](frontend/tutorial/step_1.md)
 * [Back-end development](backend/readme.md)
 * [Product Management](product_management/README.md)
    * [PRISMA flow](product_management/prisma_flow.md)
