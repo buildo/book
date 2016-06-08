@@ -23,7 +23,7 @@
        * [Components](frontend/guidelines/2.components.md)
        * [tcomb](frontend/guidelines/3.tcomb.md)
    * [Tutorial](frontend/tutorial.md)
-       * Step 0
+       * [Step 0](frontend/tutorial/step_0.md)
        * Step 1
 * Back-end development
 * [Product Management](product_management/README.md)
