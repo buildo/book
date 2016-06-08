@@ -22,7 +22,7 @@
        * [General Structure](frontend/guidelines/1.general_structure.md)
        * [Components](frontend/guidelines/2.components.md)
        * [tcomb](frontend/guidelines/3.tcomb.md)
-   * Tutorial
+   * [Tutorial](frontend/tutorial.md)
 * [Back-end development](backend/README.md)
 * [Product Management](product_management/README.md)
    * [PRISMA flow](product_management/prisma_flow.md)
