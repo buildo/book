@@ -25,7 +25,6 @@
    * [Tutorial](frontend/tutorial.md)
        * Step 0
        * Step 1
-* Back-end development
 * [Product Management](product_management/README.md)
    * [PRISMA flow](product_management/prisma_flow.md)
        * [Customer requests workflow](product_management/customer_requests_workflow.md)
