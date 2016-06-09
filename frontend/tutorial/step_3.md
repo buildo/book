@@ -1,19 +1,19 @@
 # Step 3
 
-You have probably noticed that our component has a bug: it says "Good morning" at any time of the day. This is a good example of a small amount of logic you often need in your front-end components.
+You have probably noticed that our component has a bug: it says "Good morning" at any time of the day. This is a good example of a small amount of logic you often need in your UI components.
 
 To maintain things tidy and easy to test, [revenge](https://github.com/buildo/revenge) provides another decorator, `@skinnable`. Let's import it and add it to our component:
 
 ```js
 import { pure, skinnable } from 'revenge';
+```
 
-...
-@connect({ formal: t.maybe(t.Boolean) })
+```js
 @pure
 @skinnable()
 @props({
-  transition: t.Function,
-  formal: t.maybe(t.Boolean)
+  formal: t.Boolean,
+  toggle: t.Function
 })
 export default class Hello extends React.Component {
 ```
