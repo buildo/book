@@ -12,8 +12,7 @@ Like everything in buildo, nothing is set in stone. CoC reflects  values we beli
 
 Everyone is more than welcome to propose changes to the CoC.
 
-
-In the next sessions we'll give suggestions on how to follow the CoC with the help of tools.
+In the next sections we'll give suggestions on how to follow the CoC with the help of tools.
 
 ## Be on time at meetings
 
