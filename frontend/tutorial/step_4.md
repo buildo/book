@@ -73,7 +73,7 @@ const HelloContainer = container(Hello, {
 
 Back in `Hello.js` you just need to reference the new `user` prop.
 
-Start by adding it to our `@props` list:
+Start by adding it to the `@props` list:
 
 ```js
 @props({
