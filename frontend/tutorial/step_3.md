@@ -56,5 +56,19 @@ formalGreeting() {
 }
 ```
 
+## Testing getLocals()
+
+One big win of using this approach is it is now trivial to test the behaviour of this component without rendering DOM elements:
+
+```js
+ const component = new Hello({
+    formal: false
+    toggle: function(){}
+  });
+  
+  const { greeting } = component.getLocals();
+  expect(greeting).toBe("Hello");
+```
+
 ## Step2->Step3
 Check the [full diff](https://github.com/buildo/webseed/compare/tutorial-step2...tutorial-step3) between Step 2 and Step 3.
