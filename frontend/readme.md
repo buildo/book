@@ -8,6 +8,6 @@ Guidelines provided here should be applicable to projects of various dimensions.
 
 In the following we'll cover all of this (and maybe something more):
  - [JavaScript](./1.javascript_at_buildo.md)
- - [React and its ecosystem](./2.react.md)
  - [Our internal JS and react toolset](./3.first-party_js_libraries.md)
  - [Guidelines on how to structure a react application](./4.guidelines.md)
+ - [Tutorial](./5.tutorial.md)
