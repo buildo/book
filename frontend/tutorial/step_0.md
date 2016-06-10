@@ -40,4 +40,4 @@ export default class Hello extends React.Component {
 
 There are a couple of things to note here:
 * CSS rules specific to this component are maintained as a `.scss` file in the same folder
-* The component is decorated with `@pure`, imported from the [revenge](https://github.com/buildo/revenge) library. This overrides `shouldComponentUpdate` with a more performant implementation, but it only works if your components are pure.
+* The component is decorated with `@pure`, imported from the [revenge](https://github.com/buildo/revenge) library. This overrides `shouldComponentUpdate` with a more performant implementation, but it only works if your components are *pure* (they always render in the same way given the same props).
