@@ -44,7 +44,7 @@ export default queries;
 
 In `HelloContainer.js` you can now ask `react-container` to bind our `Hello` component to the *Avenger* query you have just created.
 
-Use the alternative "factory" invocation of `react-container':
+Use the alternative _"factory"_ invocation of `react-container`:
 
 ```js
 import containerFactory from 'react-container';
