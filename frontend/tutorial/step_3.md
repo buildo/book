@@ -61,13 +61,13 @@ formalGreeting() {
 One big win of using this approach is it is now trivial to test the behaviour of this component without rendering DOM elements:
 
 ```js
- const component = new Hello({
-    formal: false
-    toggle: function(){}
-  });
-  
-  const { greeting } = component.getLocals();
-  expect(greeting).toBe("Hello");
+const component = new Hello({
+  formal: false
+  toggle: function(){}
+});
+
+const { greeting } = component.getLocals();
+expect(greeting).toBe("Hello");
 ```
 
 ## Step2->Step3
