@@ -21,7 +21,7 @@
        * [General Structure](frontend/guidelines/1.general_structure.md)
        * [Components](frontend/guidelines/2.components.md)
        * [tcomb](frontend/guidelines/3.tcomb.md)
-   * [Tutorial](frontend/tutorial.md)
+   * [Tutorial](frontend/tutorial/README.md)
        * [Step 0](frontend/tutorial/step_0.md)
        * [Step 1](frontend/tutorial/step_1.md)
        * [Step 2](frontend/tutorial/step_2.md)
