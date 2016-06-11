@@ -29,7 +29,7 @@
        * [Step 4](frontend/tutorial/step_4.md)
        * [Step 5](frontend/tutorial/step_5.md)
        * [Step 6](frontend/tutorial/step_6.md)
-       * Step 7
+       * [Step 7](frontend/tutorial/step_7.md)
 * [Back-end development](backend/readme.md)
 * [Product Management](product_management/README.md)
    * [PRISMA flow](product_management/prisma_flow.md)
