@@ -1,10 +1,4 @@
 # Step 6
-- more container magic
-  - loadingDecorator
-    - loading({ wrapper, loader })
-- helper for UI (loading, data + loading, data only)
-- helper for rendering only when `ready` (`mapProps` runs when there's a user!)
-- import a basic component from b-r-c
 
 A common pattern for components rendering server data is showing a spinner while data is being saved/loaded. `react-container` supports a `loadingDecorator` property that will handle most of this for you. We usually pair it with [react-avenger/loading](https://github.com/buildo/react-avenger/blob/master/loading.js), a 
 
