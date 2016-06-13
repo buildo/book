@@ -31,7 +31,7 @@ const queries = {
 
   user: Query({
     id: 'user',
-    returnType: t.Any,
+    returnType: t.String,
     fetch: API.getUser
   })
 
