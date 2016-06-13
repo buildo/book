@@ -3,7 +3,7 @@
   - loadingDecorator
     - loading({ wrapper, loader })
 - helper for UI (loading, data + loading, data only)
-- helper for rendering only when `ready`
+- helper for rendering only when `ready` (`mapProps` runs when there's a user!)
 - import a basic component from b-r-c
 
 ## Step5->Step6
