@@ -1,5 +1,6 @@
 # Step 7
 
+- link to skinnable() / getLocals()
 
 ## Step6->Step7
 
