@@ -1,5 +1,8 @@
 # Step 6
-
+- more container magic
+  - loadingDecorator
+    - loading({ wrapper, loader })
+- import a basic component from b-r-c
 
 ## Step5->Step6
 
