@@ -33,7 +33,7 @@ We also have a reusable React component to drop a nicer animated spinner in a ma
 
 ```js
 import LoadingSpinner from 'buildo-react-components/src/loading-spinner';
-import 'buildo-react-components/src/loading-spinner/style.scss';
+import 'buildo-react-components/blob/master/src/loading-spinner/loadingSpinner.scss';
 ```
 
 Then replace `<div>loading...</div>` with `<LoadingSpinner size='medium' />`. Et voilà!
