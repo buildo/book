@@ -5,10 +5,10 @@ A common pattern for components rendering server data is showing a spinner while
 Add the property like this:
 
 ```js
-loadingDecorator: loadingComponent
+loadingDecorator: myLoadingComponent
 ```
 
-where `loadingComponent` is a React component that will receive some useful props like `ready`, `loading` and `readyState`.
+where `myLoadingComponent` is a React component that will receive some useful props like `ready`, `loading` and `readyState`.
 
 ## Using the loading() helper
 
@@ -21,7 +21,7 @@ import loading from 'react-avenger/loading';
 
 Then use it like this:
 ```js
-const loadingComponent = loading({
+const myLoadingComponent = loading({
   wrapper: <div style={{ textAlign: 'center', position: 'relative', minHeight: 100 }} />,
   loader: <LoadingSpinner size='medium' />
 });
