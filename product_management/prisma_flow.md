@@ -2,8 +2,8 @@
 
 ## PRISMA flow
 
-1. Everything starts from a new **request** in Trello, typically added directly by the customer.
-2. The requests is then refined, following our **requirements gathering guidelines**, and it becomes actionable by buildo.
+1. Everything starts from a new **request to be refined** in Trello
+2. The request is then refined, following our **requirements gathering guidelines**, and it becomes actionable by buildo.
 3. The **actionable request** is then transformed into a GitHub issue, and tracked as a backlog card in Trello.
 4. completion of the issue in GitHub triggers PRISMA to move the backlog card to "done"
 5. in PRISMA a few more steps for approval and QA are set, depending on product needs
@@ -21,7 +21,7 @@ This is the complete PRISMA flow:
 ![](PRISMA flow.png)
 It's divided into 4 sub workflows:
 
-- customer requests workflow
+- requests workflow
 - backlog grooming workflow
 - dev workflow
 - Q.A. workflow
