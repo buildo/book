@@ -52,6 +52,6 @@ The delegation of the selection of a concrete implementation to an external obje
 
 The approach we use, in particular, is called *dependency injection* (or "don't call us we'll call you").
 
-## Conculsions
+## Conclusions
 
 The result is that we have a set of blocks that we can compose to craft our backends. For instance, we have a module for different kinds of databases. If we change our mind about the best database to use in a project, we can just swap the modules and everything works fine.![](cake.png)
