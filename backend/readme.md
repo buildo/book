@@ -21,7 +21,7 @@ We believe that, writing a *Scala* backend, you can benefit from following this 
 ## Why not a Framework?
 
 Frameworks are monolithic beasts that come with lots of features and lots of problems.
-Using a framework you have to respect its limitations and work the way it requires. Choosing a framework that fits the needs of all our projects is really hard.
+Using a framework you have to respect its limitations and work the way it requires. Choosing a framework that fits the needs of all our projects is hard.
 Also, we prefer investing our time learning a language, not a framework.
 
 
