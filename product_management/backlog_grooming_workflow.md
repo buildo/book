@@ -2,6 +2,8 @@
 
 This workflow transforms actionable requests, the output of requirements gathering, into a list of issues for developers, the **backlog**.
 
+![](/assets/open_issues.png)
+
 ### Requirements and Specs
 
 As described in the chapter on [Development Workflow](../workflow/README.md), GitHub issues are typically written in the form or **requirements** and **specs**.
