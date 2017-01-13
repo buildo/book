@@ -16,9 +16,11 @@ The PRISMA flow is a template on which to build your specific product developmen
 * are specified in written form _\(typically in the column: "HOW TO USE THIS BOARD"\)_
 * are fully discussed and shared with the development team and the customer
 
+All these tasks are responsibility of the PM.
+
 This is the complete PRISMA flow:
 
-![](/assets/PRISMA flow (1).png)  
+![](/assets/PRISMA flow (2).png)  
 It's divided into 4 sub workflows:
 
 * manage requests and defects
