@@ -1,7 +1,5 @@
 # Manage requests and defects
 
-
-
 ![](/assets/manage_requests_and_defects.png)
 
 Every request must be tracked in PRISMA. If possible, customers should be trained to submit new requests directly in the Trello board, typically in a column called `requests to be refined`. If not possible, the PM will manually add requests here as they come.

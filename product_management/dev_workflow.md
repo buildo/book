@@ -42,5 +42,3 @@ The PM will still see all the "internal issues" in Trello under the "github PM b
 
 
 
-
-
