@@ -1,43 +1,44 @@
-# Dev workflow
-![](dev.png)
+# Develop, and manage internal issues
+
+![](/assets/develop_and_manage_internal_issues.png)
 
 The full development workflow is under [Development workflow](../workflow/README.md).
 
-Here we only discuss how issues enter and exit the development workflow, plus the internal defect flow in GitHub.
+Here we only discuss how issues enter and exit the development workflow, plus how to manage **internal issues** in GitHub.
 
 ## From backlog to done
 
 ### Choose an issue
 
-Everything starts from an open issue associated to a backlog card. The first thing is to find issues with high priority: those linked to the top cards in the backlog column.
+Everything starts from an open issue associated to a backlog card. Open issues should be only those issues that are "in development". Things that will be developed in the future should stay in Trello, not GitHub.
 
-To do this, we have 2 systems:
-- **simple flow** PRISMA takes care of labeling the top 5 issues with priority labels, so that devs don't need to leave GitHub.
-- **milestone flow** On more complex projects, the milestone flow requires a milestone to be defined with all the issues for the current iteration. Inside a milestone, issues are not prioritized. Developers only take issues from the current milestone.
+If you work with sprints (milestones), the open issues should mostly be the current sprint.
 
-The milestone flow works if there are sufficient resources on a product, typically for smaller products the simple flow is enough.
-
-To help visualize the current milestone, you can use the [milestone overview tool](https://github.com/buildo/core/issues/201). It's a WIP, still under evaluation :)
+To help visualize the current sprint (milestone), you can use the [milestone overview tool](https://github.com/buildo/core/issues/201). It's a WIP, still under evaluation :)
 
 ### Implement, test and deploy
 
 This is the development flow. Only two things must be highlighed from a PM perspective:
-- **testing** is done via test plans: **the first and most important Q.A. step is on developers**.
-- **deploy** on the test environment is essential for PMs and customers to test: it's mandatory and should be automated.
 
-## Internal defect flow
+* **testing** is tracked and ensured via test plans: **the first and most important Q.A. step is on developers**.
+  * make sure the test plan template is good for your project, and customize it if necessary!
+* **deploy** on the test environment is essential for PMs and customers to test: it's mandatory and should be automated.
 
-In products with large teams, the PM might not able to track all issues and assure they get completed. In this case, we can use the (optional) internal defect flow.
+## Manage internal issues
 
-1. **Developers can open issues in GitHub and let them stay there**
-  - in the simple flow, developers can only open issues if they are going to close them soon after
-2. **PMs can open issues for small defects in GitHub and not track them in Trello**
-  - in the simple flow all defects must be tracked in Trello
-3. **The dev lead must limit the total number of open internal issues**
-  - in the simple flow typically there is no dev lead, all tracking is done by the PM
+Internal issues are issues that developers open directly in GitHub, without starting from a request or bug report in PRISMA. They are marked with the label `internal`.
 
-As a rule of thumb, an issue should be internal if it is:
-- DX (developer experience)
-- a minor refactor (does not impact greatly on dev planning)
-- a minor defect filed by a developer
-- a serious bug reported and solved by developers within a short time (hours, maximum a few days)
+To evaluate if an issue should be internal, the DEV should follow this guideline:
+
+* it's a **small** **defects or DX improvement**
+* it's outside the scope of a macro issue (aka it can't be a sub-issue)
+* it's **not directly relevant to the PM**
+* typically, the DEV will **fix it right away**
+
+The PM will still see all the "internal issues" in Trello under the "github PM buffer" column. For each new internal issue, a card will appear there. The PM should:
+
+1. if the issue is truly internal => archive the card
+2. if the issue should have started as a request or bug report => move the card to the right column, and remove the `internal` label in GitHub
+
+
+
