@@ -35,10 +35,16 @@ To evaluate if an issue should be internal, the DEV should follow this guideline
 * it's **not directly relevant to the PM**
 * typically, the DEV will **fix it right away**
 
-The PM will still see all the "internal issues" in Trello under the "github PM buffer" column. For each new internal issue, a card will appear there. The PM should:
+The PM will not see "internal issues" in Trello.
 
-1. if the issue is truly internal => archive the card
-2. if the issue should have started as a request or bug report => move the card to the right column, and remove the `internal` label in GitHub
+### A note for PMs...
+
+At times DEVs open issues in GitHub and don't put the label `internal`. This happens because GitHub is right there, it's quick and easy to open issues, and it happens that someone opens an issue instead of a card.
+
+These issues (without the label `internal`) will appear in a special column in Trello called "github PM buffer". For each new card in this column, the PM should evaluate:
+
+1. if the issue was internal and the DEV forgot to add the label => go to GitHub and add the label `internal`, the card will be automatically archived
+2. if the issue should have started as a request or bug report => move the card to the right column and start tracking correctly
 
 
 
