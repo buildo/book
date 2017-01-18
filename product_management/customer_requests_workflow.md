@@ -9,7 +9,7 @@ The `(r)` at the beginning of a column name tells PRISMA to let you open a GitHu
 Typically we have 4 requests columns:
 
 * `icebox`: requests that are on hold, buildo does not work on these
-* `requests to be refined`: requests that need to be refined and transformed into actionable requests
+* `requests to be refined`: requests that need to be refined and transformed into actionable requests through a process of requirements gathering
 * `bug reports`: bug reports that need to be verified (can come from the customer, the PM or the DEV team)
 * `(r) actionable requests`: requests ready to be prepared for development, kept here in a prioritized list
 
