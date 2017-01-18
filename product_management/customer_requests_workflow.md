@@ -23,9 +23,9 @@ This process, helping a customer defining their wish, is "requirements gathering
 
 Our objective is to shape a customer wish into a set of requirements that are:
 
-* **effective**: fully respond to the _real_ customer need
-* **efficient**: our mission is not to charge extra hours whenever possible
-* **actionable**: complete, consistent, and with a sufficient level of details for buildo to execute
+* **effective:** fully respond to the _real_ customer need
+* **efficient:** our mission is not to charge extra hours whenever possible
+* **actionable:** complete, consistent, and with a sufficient level of details for buildo to execute
 
 It's a 2 step process:  
 1. understand the real business need  
@@ -73,21 +73,21 @@ It is encouraged to write user stories in Trello to better define a feature. If 
 
 Without going into much detail, a user story is composed of:
 
-* who: **as a **student
-* what: **I want to **download my schedule in PDF
-* why: **so that **I can print it and bring it too school, where we don't have Wi-Fi
+* who: **as a** student
+* what: **I want to** download my schedule in PDF
+* why: **so that** I can print it and bring it too school, where we don't have Wi-Fi
 
 This way of expressing requests gives us insight as to why the feature is necessary, and who will be the user of this feature. This lets us optimize our requirements gathering discussion.
 
-**Important: **User stories are useful both for external and internal requests. Many times the line between a customer and us is blurred in PRISMA. Someone in the back-end team might act as a customer w.r.t. the front-end team, of more often the PM acts as the customer. User stories are still suggested as a way to express requests.
+**Important:** User stories are useful both for external and internal requests. Many times the line between a customer and us is blurred in PRISMA. Someone in the back-end team might act as a customer w.r.t. the front-end team, of more often the PM acts as the customer. User stories are still suggested as a way to express requests.
 
 The request template looks like this:
 
 ![](/assets/request_template.png)
 
-1. The first step is to define the stories \(high level who, what, why\). 
-2. Then, detailed requirements are written \(the "what"\). 
-3. Specs are typically written later on \(in the "prepare for dev" step\), but hints or a draft can be added here as well
+1. The first step is to define the stories (high level who, what, why).
+2. Then, detailed requirements are written (the "what").
+3. Specs are typically written later on (in the "prepare for dev" step), but hints or a draft can be added here as well
 
 
 

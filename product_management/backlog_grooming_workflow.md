@@ -10,8 +10,8 @@ As described in the chapter on [Development Workflow](../workflow/README.md), Gi
 
 In the "prepare for dev" step, we do 2 things:
 
-1. **challenge the PM: **make sure the requirements are complete and sound, and the request overall makes sense.
-2. **draft specs: **in particular for complex issues, this is the time when a draft of the specs is written, typically with the help of a Tech Lead and/or other developers. 
+1. **challenge the PM:** make sure the requirements are complete and sound, and the request overall makes sense.
+2. **draft specs:** in particular for complex issues, this is the time when a draft of the specs is written, typically with the help of a Tech Lead and/or other developers. 
 
 There are times when you know the requirements are not complete, or the specs are very tentative. In that case, use explicit words such as **DRAFT** or **suggestion** to mark those exceptions.
 
@@ -21,17 +21,18 @@ As usual, let's read the [first answer](http://programmers.stackexchange.com/que
 
 > requirements are **what** your program should do, the specifications are **how** you plan to do it.
 
-Ehm.. sure, but it just doesn't work like that :\( It's difficult to distinguish the what from the how, it depends on:
+Ehm.. sure, but it just doesn't work like that :( It's difficult to distinguish the what from the how, it depends on:
 
 * the level of detail of the issue
-* the person that wrote the issue \(more tech or more PM?\)
-* the issue assignee \(how much do they know the product?\)
+* the person that wrote the issue (more tech or more PM?)
+* the issue assignee (how much do they know the product?)
 * ...
 
 The definition we use in buildo is:
 
-**Requirements **are a description of** what to build.  
-Specs **are a** **description of** what to build and how, written by the DEV team after requirements, with higher level of detail.**
+**Requirements** are a description of **what to build.**
+
+**Specs** are a description of **what to build and how**, written by the **DEV team** after requirements, with **higher level of detail**.
 
 You can see the product development process as a progressive refinement of requirements into specs, first as cards "to be refined" that become "actionable requests", then in GitHub issues. Same concepts apply.
 
@@ -45,15 +46,15 @@ As a PM, when you write requirements, your job is to make sure that they are:
 
 ![](reqs_quality_detail.png)
 
-**\[BAD\]** If your requirements are incomplete, inconsistent and also with little details, the developer will typically complain and ask you to improve them.
+**[BAD]** If your requirements are incomplete, inconsistent and also with little details, the developer will typically complain and ask you to improve them.
 
-**\[DANGER\]** If you requirements are incomplete, inconsistent but with a lot of details, the developer will typically go and implement something **broken by design ®**. This is because **detail is a false proxy for completeness and consistency**. Always remember that, if you want to provide a lot of details, your effort to keep requirements complete and consistent will grow likewise.
+**[DANGER]** If you requirements are incomplete, inconsistent but with a lot of details, the developer will typically go and implement something **broken by design®**. This is because **detail is a false proxy for completeness and consistency**. Always remember that, if you want to provide a lot of details, your effort to keep requirements complete and consistent will grow likewise.
 
-**\[OK\]** If you requirements are complete, consistent and have a level of detail that make the issue actionable for the developer, they are OK. The key here is to know your developers, and their level of knowledge of the product, striving to provide the right level of detail.  
+**[OK]** If you requirements are complete, consistent and have a level of detail that make the issue actionable for the developer, they are OK. The key here is to know your developers, and their level of knowledge of the product, striving to provide the right level of detail.  
 If you give more, you're missing out on the developer's abilities and failing to trust and delegate.  
 If you give less, you're making it too hard for developers to implement and inevitably causing many roundtrips of questions in the future.
 
-## \[optional\] Estimating and managing priorities
+## [optional] Estimating and managing priorities
 
 The customer handles priorities. However, we need to give an idea of the effort required so that they can prioritize.
 

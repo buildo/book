@@ -14,9 +14,9 @@ They use projects to plan and execute every new release. We use [continuous deli
 
 In buildo, big projects are not the norm. That's why we don't need a lot of traditional project management. The following sections outline our product management workflow, a continuous flow that starts with customer requests and ends with delivered business value.
 
-**disclaimer: ** we'll still refer to our products as projects, and talk about project managers, that's life. As long as we understand the fundamental difference between a single project and a continuously evolving product, we should be fine.
+**disclaimer:** we'll still refer to our products as projects, and talk about project managers, that's life. As long as we understand the fundamental difference between a single project and a continuously evolving product, we should be fine.
 
-**disclaimer: ** in certain situations we have to work in a more traditional project management environment. What is explained in this chapter is still useful, but with a few caveats:
+**disclaimer:** in certain situations we have to work in a more traditional project management environment. What is explained in this chapter is still useful, but with a few caveats:
 
 * Continuous delivery and feedback is done through stakeholder demos.
 * Customer requests are iterative refinements over product requirements.
