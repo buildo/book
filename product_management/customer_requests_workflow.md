@@ -1,6 +1,6 @@
 # Manage requests and defects
 
-![](/assets/manage_requests_and_defects.png)
+![](manage_requests_and_defects.png)
 
 Every request must be tracked in PRISMA. If possible, customers should be trained to submit new requests directly in the Trello board, typically in a column called `requests to be refined`. If not possible, the PM will manually add requests here as they come.
 
@@ -83,7 +83,7 @@ This way of expressing requests gives us insight as to why the feature is necess
 
 The request template looks like this:
 
-![](/assets/request_template.png)
+![](request_template.png)
 
 1. The first step is to define the stories (high level who, what, why).
 2. Then, detailed requirements are written (the "what").

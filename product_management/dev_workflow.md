@@ -1,6 +1,6 @@
 # Develop, and manage internal issues
 
-![](/assets/develop_and_manage_internal_issues.png)
+![](develop_and_manage_internal_issues.png)
 
 The full development workflow is under [Development workflow](../workflow/README.md).
 

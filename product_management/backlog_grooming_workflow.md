@@ -2,7 +2,7 @@
 
 This workflow transforms actionable requests, the output of requirements gathering, into a list of issues for developers, the **backlog**.
 
-![](/assets/open_issues.png)
+![](open_issues.png)
 
 ### Requirements and Specs
 

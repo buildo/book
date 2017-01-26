@@ -20,7 +20,7 @@ All these tasks are responsibility of the PM.
 
 This is the complete PRISMA flow:
 
-![](/assets/PRISMA flow (2).png)  
+![](complete_prisma_flow.png)
 It's divided into 4 sub workflows:
 
 * manage requests and defects

@@ -1,9 +1,9 @@
 # Ensure quality
 
-![](/assets/ensure_quality.png)  
-Q.A. in buildo is done in 3 ordered steps:  
-1. **developer testing** verify that issue requirements are met, and that no regression has been caused  
-2. **PM Q.A.** second verification on issue requirements from the PM perspective  
+![](ensure_quality.png)
+Q.A. in buildo is done in 3 ordered steps:
+1. **developer testing** verify that issue requirements are met, and that no regression has been caused
+2. **PM Q.A.** second verification on issue requirements from the PM perspective
 3. **customer validation** final validation by the customer
 
 Developer testing is explained in the [Pull Requests](../workflow/3.pull-requests.md) chapter.
