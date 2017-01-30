@@ -86,9 +86,8 @@ Start by adding it to the `@props` list:
 Then make sure `getLocals()` is forwarding it to the `template()` function:
 
 ```js
-getLocals() {
-  const { toggle, user } = this.props;
-  const greeting = this.props.formal ? this.formalGreeting() : 'Hello';
+getLocals({ toggle, user, formal }) {
+  const greeting = formal ? this.formalGreeting() : 'Hello';
 
   return { toggle, greeting, user };
 }
