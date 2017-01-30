@@ -58,9 +58,8 @@ onRefreshClick: t.Function
 Then update `getLocals()`:
 
 ```js
-getLocals() {
-  const { toggle, user, onRefreshClick } = this.props;
-  const greeting = this.props.formal ? this.formalGreeting() : 'Hello';
+getLocals({ toggle, user, onRefreshClick, formal }) {
+  const greeting = formal ? this.formalGreeting() : 'Hello';
 
   return { toggle, greeting, user, onRefreshClick };
 }
