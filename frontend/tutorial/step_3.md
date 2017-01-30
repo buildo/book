@@ -37,9 +37,8 @@ template({ toggle, greeting }) {
 2. `getLocals()`, which will contain the logic and return the object expected by the `template()` method above
 
 ```js
-getLocals() {
-  const { toggle } = this.props;
-  const greeting = this.props.formal ? this.formalGreeting() : 'Hello';
+getLocals({ toggle, formal }) {
+  const greeting = formal ? this.formalGreeting() : 'Hello';
 
   return { toggle, greeting };
 }
@@ -61,12 +60,8 @@ formalGreeting() {
 One big win of using this approach is it is now trivial to test the behaviour of this component without rendering DOM elements:
 
 ```js
-const component = new Hello({
-  formal: false
-  toggle: function(){}
-});
-
-const { greeting } = component.getLocals();
+const props = { formal: false, toggle: () => {} };
+const { greeting } = Hello.prototype.getLocals(props);
 expect(greeting).toBe("Hello");
 ```
 
