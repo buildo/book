@@ -14,17 +14,19 @@ const baseProps = {
 
 describe('Hello', () => {
 
+  const getLocals = Hello.prototype.getLocals;
+
   it('should greet in an informal way when formal=false', () => {
 
-    const hello = new Hello({ ...baseProps, formal: false });
-    expect(hello.getLocals().greeting).toBe('Hello');
+    const { greeting } = getLocals({ ...baseProps, formal: false });
+    expect(greeting).toBe('Hello');
 
   });
 
   it('should greet in a formal way when formal=true', () => {
 
-    const hello = new Hello({ ...baseProps, formal: true });
-    expect(hello.getLocals().greeting.includes('Good')).toBe(true);
+    const { greeting } = getLocals({ ...baseProps, formal: true });
+    expect(greeting.includes('Good')).toBe(true);
 
   });
 
