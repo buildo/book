@@ -61,7 +61,8 @@ One big win of using this approach is it is now trivial to test the behaviour of
 
 ```js
 const props = { formal: false, toggle: () => {} };
-const { greeting } = Hello.prototype.getLocals(props);
+const instance = new Hello(props);
+const { greeting } = instance.getLocals(props);
 expect(greeting).toBe("Hello");
 ```
 
