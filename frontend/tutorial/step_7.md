@@ -15,16 +15,18 @@ const baseProps = {
 describe('Hello', () => {
 
   it('should greet in an informal way when formal=false', () => {
-
-    const hello = new Hello({ ...baseProps, formal: false });
-    expect(hello.getLocals().greeting).toBe('Hello');
+    const props = { ...baseProps, formal: false };
+    const instance = new Hello(props); 
+    const { greeting } = instance.getLocals(props);
+    expect(greeting).toBe('Hello');
 
   });
 
   it('should greet in a formal way when formal=true', () => {
-
-    const hello = new Hello({ ...baseProps, formal: true });
-    expect(hello.getLocals().greeting.includes('Good')).toBe(true);
+    const props = { ...baseProps, formal: true };
+    const instance = new Hello(props); 
+    const { greeting } = instance.getLocals(props);
+    expect(greeting.includes('Good')).toBe(true);
 
   });
 
