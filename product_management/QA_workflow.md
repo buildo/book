@@ -32,6 +32,8 @@ If you are working with a macro issue, simply add a new sub-issue to track the d
 
 If, on the other hand, you are working with a simple issue, it's a good practice to transform the issue in a macro and then create a sub-issue for the defect.
 
+This is important to preserve the context provided by the original issue alongside the defect.
+
 To do this automatically, simply run this command:
 
 ```
