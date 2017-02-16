@@ -26,5 +26,21 @@ In the last step, buildo believes that no bugs exist and all business requiremen
 * **customer awareness** customers typically request features but often don't check them out for real. It's very beneficial for the product if the customer understands every aspect involved.
 * **final requirements verification** at times the implemented feature is not up to expectations, either because buildo failed or because the customer expressed a partial request without knowing. This last step should avoid crippled features to live too long.
 
+## What to do when a defect is found
 
+If you are working with a macro issue, simply add a new sub-issue to track the defect. The macro issue will be opened again, and it will move back to the backlog column.
+
+If, on the other hand, you are working with a simple issue, it's a good practice to transform the issue in a macro and then create a sub-issue for the defect.
+
+To do this automatically, simply run this command:
+
+```
+curl \
+-X POST \
+-H "x-extension-event: extension-issue-with-card-to-sub-issue" \
+-H "Content-Type: application/json" \
+-d '{"repoFullName": "{{ORG/REPO}}", "topic": "{{TOPIC}}", "issueNumber": {{ISSUE_NUMBER}}}' \
+https://prisma.our.buildo.io/extension
+```
+For example, `{{ORG/REPO}}` can be `buildo/prisma`. The topic should be a short description of the feature, which will be used as topic for the macro issue.
 
