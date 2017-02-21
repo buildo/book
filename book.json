@@ -2,5 +2,5 @@
   "structure": {
     "README": "introduction.md"
   },
-  "gitbook": "^4.0.0"
+  "gitbook": ">= 3.0.0"
 }
