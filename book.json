@@ -1,0 +1,6 @@
+{
+  "structure": {
+    "README": "introduction.md"
+  },
+  "gitbook": "^4.0.0"
+}
