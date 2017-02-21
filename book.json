@@ -1,7 +1,7 @@
 {
   "root": "book",
   "gitbook": ">= 3.0.0",
-  "plugins": ["edit-link"],
+  "plugins": ["edit-link", "prism", "-highlight"],
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/buildo/book/edit/master/book",
