@@ -1,4 +1,11 @@
 {
   "root": "book",
-  "gitbook": ">= 3.0.0"
+  "gitbook": ">= 3.0.0",
+  "plugins": ["edit-link"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/buildo/book/edit/master/book",
+      "label": "Edit This Page"
+    }
+  }
 }
