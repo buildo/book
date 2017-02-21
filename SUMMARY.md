@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Code of Conduct](CoC.md)
+* [Collaboration](collaboration/README.md)
 * [Development workflow](workflow/README.md)
   * [GitHub Workflow](workflow/1.github-workflow.md)
   * [Issues](workflow/2.issues.md)
