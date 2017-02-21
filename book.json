@@ -1,6 +1,4 @@
 {
-  "structure": {
-    "readme": "introduction.md"
-  },
+  "root": "book",
   "gitbook": ">= 3.0.0"
 }
