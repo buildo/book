@@ -23,7 +23,7 @@ Then use it like this:
 ```js
 const myLoadingComponent = loading({
   wrapper: <div style={{ textAlign: 'center', position: 'relative', minHeight: 100 }} />,
-  loader: <LoadingSpinner size='medium' />
+  loader: <div>loading...</div>
 });
 ```
 
