@@ -1,0 +1,19 @@
+build:
+  book:
+    image: fellah/gitbook
+    commands:
+      - gitbook install
+      - gitbook build
+
+deploy:
+  s3:
+    acl: public-read
+    region: eu-central-1
+    bucket: book.buildo.io
+    access_key: "$$S3_ACCESS_KEY"
+    secret_key: "$$S3_SECRET_KEY"
+    source: _book
+    target: /
+    recursive: true
+    when:
+      branch: master
