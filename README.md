@@ -10,3 +10,6 @@ The book is automatically synced with GitHub, so you can simply submit a PR and 
 If you're moving sections around or adding new sections, please remember to udpate the [SUMMARY](https://github.com/buildo/book/blob/master/book/SUMMARY.md).
 
 Any contribution from anybody is welcome!
+
+## Discussing about the content
+Open an issue here on GitHub (and you feel like, link to the page)
