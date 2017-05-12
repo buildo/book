@@ -4,6 +4,7 @@
 * [Code of Conduct](CoC.md)
 * [Collaboration](collaboration/README.md)
   * [Slack](collaboration/1.slack.md)
+  * [Mailing Lists](collaboration/2.mailing.md)
 * [Development workflow](workflow/README.md)
   * [GitHub Workflow](workflow/1.github-workflow.md)
   * [Issues](workflow/2.issues.md)
