@@ -7,7 +7,7 @@ There were many points discussed, but we picked the top 5 so that we can really 
 ![](code_of_conduct.png)
 Like everything in buildo, nothing is set in stone. This CoC reflects the values we believe in; if we change our minds as a team we'll adapt it and everyone is more than welcome to propose changes.
 
-In the next subsections, we'll give suggestions on how to follow the CoC with the help of tools.
+In the next subsections we'll give suggestions on how to follow the CoC with the help of tools.
 
 ## Be on time at meetings
 
