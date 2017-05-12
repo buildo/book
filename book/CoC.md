@@ -32,7 +32,7 @@ A commitment should always be clearly put, and these attributes should be clear:
 
 Consider this a negotiation, not an order. Both performer and requester must agree on the commitment.
 
-Remember to notify the other people involved if things change; in particular, if something happens and the commitment cannot be held.
+Remember to notify the other people involved if things change; especially if the commitment cannot be held.
 
 To keep track of commitments, we don't yet have a standard way. Suggested tools are:
 
@@ -61,7 +61,7 @@ Organize meetings after 10am and before 6pm to make sure everyone attends, and t
 
 This is a general principle, and it helps a lot. You will see it in effect in our GitHub issues (we keep them small), our iteration planning, the size of features in development, etc.
 
-A good way to see if your really doing small things, and keeping the "flow", is to count your WIP (work in progress) taks. We do this in GitHub with the WIP label, but you can do it with everything you are working on. The goal is to keep low WIP and high throughput. This is *flow*.
+A good way to see if you're really doing small things, and keeping the "flow", is to count your WIP (work in progress) taks. We do this in GitHub with the WIP label, but you can do it with everything you are working on. The goal is to keep low WIP and high throughput. This is *flow*.
 
 ---
 
