@@ -1,10 +1,10 @@
-# Develop, and manage internal issues
+# Develop
 
-![](develop_and_manage_internal_issues.png)
+![](develop.png)
 
 The full development workflow is under [Development workflow](../workflow/README.md).
 
-Here we only discuss how issues enter and exit the development workflow, plus how to manage **internal issues** in GitHub.
+Here we only discuss how issues enter and exit the development workflow.
 
 ## From backlog to done
 
@@ -14,8 +14,6 @@ Everything starts from an open issue associated to a backlog card. Open issues s
 
 If you work with sprints (milestones), the open issues should mostly be the current sprint.
 
-To help visualize the current sprint (milestone), you can use the [milestone overview tool](https://github.com/buildo/core/issues/201). It's a WIP, still under evaluation :)
-
 ### Implement, test and deploy
 
 This is the development flow. Only two things must be highlighed from a PM perspective:
@@ -24,27 +22,18 @@ This is the development flow. Only two things must be highlighed from a PM persp
   * make sure the test plan template is good for your project, and customize it if necessary!
 * **deploy** on the test environment is essential for PMs and customers to test: it's mandatory and should be automated.
 
-## Manage internal issues
+## I'm a Dev: what if I need to open a new issue? Should I go to Trello?
 
-Internal issues are issues that developers open directly in GitHub, without starting from a request or bug report in PRISMA. They are marked with the label `internal`.
+The guidelines is simple:
 
-To evaluate if an issue should be internal, the DEV should follow this guideline:
-
-* it's a **small** **defects or DX improvement**
-* it's outside the scope of a macro issue (aka it can't be a sub-issue)
-* it's **not directly relevant to the PM**
-* typically, the DEV will **fix it right away**
-
-The PM will not see "internal issues" in Trello.
+- if it's **in focus**, meaning you are going to work on it right away or very soon (same day), open in GitHub
+- otherwise, if **not in focus**, open in Trello
 
 ### A note for PMs...
 
-At times DEVs open issues in GitHub and don't put the label `internal`. This happens because GitHub is right there, it's quick and easy to open issues, and it happens that someone opens an issue instead of a card.
+At times developers open issues in GitHub and don't work on them right away, generating backlog that needs prioritization. These issues are visible in the list "github PM buffer" in Trello, the PM can then:
 
-These issues (without the label `internal`) will appear in a special column in Trello called "github PM buffer". For each new card in this column, the PM should evaluate:
-
-1. if the issue was internal and the DEV forgot to add the label => go to GitHub and add the label `internal`, the card will be automatically archived
-2. if the issue should have started as a request or bug report => move the card to the right column and start tracking correctly
-
+- ask the developer if they want to work on it right now, and move the card to the focus column
+- close the issue on GitHub, and move the card upstream
 
 
