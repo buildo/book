@@ -25,7 +25,7 @@ It's divided into 4 sub workflows:
 
 * manage requests and defects
 * open issues
-* develop, and manage internal issues
+* develop
 * ensure quality
 
 The following 4 sections describe these workflows and their guidelines.
