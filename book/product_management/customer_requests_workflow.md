@@ -6,14 +6,15 @@ Every request must be tracked in PRISMA. If possible, customers should be traine
 
 The `(r)` at the beginning of a column name tells PRISMA to let you open a GitHub issue directly from the card, maintaining traceability.
 
-Typically we have 4 requests columns:
+At a minimum, we have 5 requests columns:
 
 - `icebox`: requests that are on hold, buildo does not work on these
 - `requests to be refined`: requests that need to be refined and transformed into actionable requests through a process of requirements gathering
 - `bug reports`: bug reports that need to be verified (can come from the customer, the PM or the DEV team)
+- `tech debt`: areas of tech debt, meaning code or procedures that will cause extra effort in the future if not improved (includes DX, refactors, library upgrades, documentation and process improvements)
 - `(r) actionable requests`: requests ready to be prepared for development, kept here in a list and prioritized by the PM
 
-The PM is responsible for transforming all requests (except those in icebox) into actionable requests. We refer to this process as **requirements gathering**.
+The PM is responsible for ensuring all requests (except those in icebox) become actionable requests. We refer to this process as **requirements gathering**.
 
 ## Requirements gathering guidelines
 
