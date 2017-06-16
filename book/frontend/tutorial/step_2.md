@@ -30,12 +30,12 @@ There is some magic here, but the important thing to note is we use the `contain
 
 We can now simplify our UI component to this:
 ```js
-@pure
+@intlMethods
 @props({
   formal: t.Boolean,
   toggle: t.Function
 })
-export default class Hello extends React.Component {
+export default class Hello extends React.PureComponent {
 
   render() {
     return (
@@ -56,13 +56,15 @@ Another bonus point: we have removed the `t.maybe` type. It's the responsibility
 
 ## Checking it all works
 
-Modify the router at `src/app/routes/HelloHandler.js` to use our new container:
+Modify the `index.js` file in the same folder to make it export the container instead of the component itself:
 
 ```js
-import Hello from 'Hello/HelloContainer';
+export default from './HelloContainer';
 ```
 
 Hopefully, your component should work exactly as before!
 
-## Step1->Step2 diffset
-As with the previous step, you can check the [full diff](https://github.com/buildo/webseed/compare/tutorial-step1...tutorial-step2) between Step 1 and Step 2.
+## Step1 -> Step2 diff
+
+As with the previous step, you can check the `Step 2` commit diff [here](https://github.com/buildo/webseed/commits/tutorial).
+

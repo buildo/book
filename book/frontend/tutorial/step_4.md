@@ -4,7 +4,7 @@
 
 Most web applications need to frequently synchronize data with a server using HTTP calls.
 
-To manage these calls in a simple and consistent manner, we have created [Avenger](https://github.com/buildo/avenger). It's a powerful data-fetching library supporting batching, caching, data dependencies and much more. Refer to the [Avenger book](https://buildo.gitbooks.io/avenger/content/) for more details.
+To manage these calls in a simple and consistent manner, we created [Avenger](https://github.com/buildo/avenger). It's a powerful data-fetching library supporting batching, caching, data dependencies and much more. Refer to the [Avenger book](https://buildo.gitbooks.io/avenger/content/) for more details.
 
 The basic units of Avenger are *Queries* and *Commands*, following [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_Query_Responsibility_Segregation) principles. We will start by creating a *Query* and we will explore *Commands* in Step 5.
 
@@ -22,41 +22,28 @@ export const getUser = () => {
 
 Then define your first `avenger` Query in `src/app/queries.js`:
 
-```
-import { Query } from 'avenger';
+```javascript
+import { Query } from 'avenger/lib/graph';
+import { Expire } from 'avenger/lib/cache/strategies';
 import t from 'tcomb';
 import * as API from 'API';
 
-const queries = {
-
-  user: Query({
-    id: 'user',
-    returnType: t.String,
-    fetch: API.getUser
-  })
-
-};
-
-export default queries;
+export const user = Query({
+  id: 'user',
+  chacheStrategy: new Expire(2000),
+  returnType: t.String,
+  fetch: API.getUser
+});
 ```
 
-## More react-container magic
+## More container magic
 
-In `HelloContainer.js` you can now ask `react-container` to bind our `Hello` component to the *Avenger* query you have just created.
+In `HelloContainer.js` you can now ask the `container` to bind our `Hello` component to the *Avenger* query you have just created.
 
-Use the alternative _"factory"_ invocation of `react-container`:
+Invoke `container()` as before, with an additional `queries: ['user']` property. This will add a new `user` property to the input of `mapProps()`.
 
 ```js
-import containerFactory from 'react-container';
-import allQueries from 'queries';
-
-const container = containerFactory({ allQueries });
-```
-
-Then invoke `container()` as before, with an additional `queries: ['user']` property. This will add a new `user` property to the input of `mapProps()`.
-
-```
-const HelloContainer = container(Hello, {
+export default container(Hello, {
   connect: { formal: t.maybe(t.Boolean) },
   queries: ['user'],
   mapProps: ({ transition, formal = false, user }) => ({
@@ -64,7 +51,7 @@ const HelloContainer = container(Hello, {
       transition({ formal: !formal });
     },
     formal,
-    user: user || '...'
+    user
   })
 });
 ```
@@ -86,17 +73,17 @@ Start by adding it to the `@props` list:
 Then make sure `getLocals()` is forwarding it to the `template()` function:
 
 ```js
-getLocals({ toggle, user, formal }) {
-  const greeting = formal ? this.formalGreeting() : 'Hello';
+getLocals({ formal, toggle, user }) {
+  const greeting = formal ? formalGreeting() : 'Hello';
 
-  return { toggle, greeting, user };
+  return { greeting, toggle, user };
 }
 ```
 
 And finally render it!
 
 ```js
-template({ toggle, greeting, user }) {
+template({ greeting, toggle, user }) {
   return (
     <div className='hello'>
       <h1>
@@ -107,6 +94,22 @@ template({ toggle, greeting, user }) {
 }
 ```
 
-## Step3->Step4
+## What to do when waiting for the query data
 
-Check the [full diff](https://github.com/buildo/webseed/compare/tutorial-step3...tutorial-step4) between Step 3 and Step 4.
+In this step, we can simply decide to not handle the loading situation (i.e., not notify the user about the fact that we are waiting for the `user` query result).
+
+In the `Hello.js` add the following import:
+
+```js
+import { noLoaderLoading } from 'react-avenger/lib/loading';
+```
+
+And the following decorator:
+
+```js
+@noLoaderLoading
+```
+
+## Step3 -> Step4 diff
+
+You can check the `Step 4` commit diff [here](https://github.com/buildo/webseed/commits/tutorial).
