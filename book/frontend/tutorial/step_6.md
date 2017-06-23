@@ -33,7 +33,7 @@ export default from 'buildo-react-components/lib/loading-spinner';
 export default from './LoadingSpinner';
 ```
 
-3. Import it's style in the `loadingSpinner.scss` file:
+3. Import its style in the `loadingSpinner.scss` file:
 ```css
 @import '~buildo-react-components/src/loading-spinner/loadingSpinner.scss';
 ```

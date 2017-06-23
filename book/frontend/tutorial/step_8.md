@@ -2,7 +2,9 @@
 
 You reached the last step of the tutorial!
 
-In our projects we almost always use the (FlexView)[https://github.com/buildo/react-flexview] component to compose our layout and to wrap our components, instead of the classic `<div>`. Let's try to do the same here!
+In our projects we almost always use the (FlexView)[https://github.com/buildo/react-flexview] component to compose our layout and to wrap our components, instead of the classic `<div>`. To easily understand why, take a minute to read the introduction of the [Flexview Book](https://buildo.gitbooks.io/flexview/content/docs/Introduction.html).
+
+Let's try to do the same here!
 
 First, to make it work, add the corresponding `import` inside the `src/app/theme/index.js` file:
 ```js

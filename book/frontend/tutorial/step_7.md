@@ -32,7 +32,7 @@ As you can see, we already customized the `BRCPanel` by saying that we want the 
 export default from './Panel';
 ```
 
-3. Import it's style in the `panel.scss` file and customize it using the SASS interface:
+3. Import its style in the `panel.scss` file and customize it using the SASS interface:
 ```css
 @import '~theme/variables.scss';
 
@@ -49,7 +49,7 @@ $content-background: $cloud;
   }
 }
 ```
-We just overridden its default background color and customized its border.
+We just overridden its default background color, via sass variables override, and customized its border and shadow.
 
 4. Make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.js`:
 ```js

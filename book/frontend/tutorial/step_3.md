@@ -69,7 +69,7 @@ const { greeting } = instance.getLocals(props);
 expect(greeting).toBe("Hello");
 ```
 
-Despite this, it is not something we do it often in practite. But it's still good to know.
+It is not something we often do in practite, but it's still good to know.
 
 ## Step2 -> Step3 diff
 

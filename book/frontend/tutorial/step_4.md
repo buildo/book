@@ -4,7 +4,7 @@
 
 Most web applications need to frequently synchronize data with a server using HTTP calls.
 
-To manage these calls in a simple and consistent manner, we created [Avenger](https://github.com/buildo/avenger). It's a powerful data-fetching library supporting batching, caching, data dependencies and much more. Refer to the [Avenger book](https://buildo.gitbooks.io/avenger/content/) for more details.
+To manage these calls in a simple and consistent manner, we created [Avenger](https://github.com/buildo/avenger). It's a powerful data-fetching library supporting batching, caching, data dependencies and much more.
 
 The basic units of Avenger are *Queries* and *Commands*, following [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_Query_Responsibility_Segregation) principles. We will start by creating a *Query* and we will explore *Commands* in Step 5.
 
