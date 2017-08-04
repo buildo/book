@@ -65,4 +65,4 @@ A good way to see if you're really doing small things, and keeping the "flow", i
 
 ---
 
-For the curious ones, here's the original document we used to discuss the CoC: https://paper.dropbox.com/doc/code-of-conduct-VnfduvHgNmOY0v3xqfnNC
+For the curious ones, here's the original document we used to discuss the CoC (the link is not publicly accessible): https://paper.dropbox.com/doc/code-of-conduct-VnfduvHgNmOY0v3xqfnNC
