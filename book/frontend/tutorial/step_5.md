@@ -13,7 +13,7 @@ import queries from 'queries';
 export const doRefreshUser = Command({
   id: 'doRefreshUser',
   invalidates: { user: queries.user },
-  run: ::Promise.resolve
+  run: Promise.resolve.bind(Promise)
 });
 ```
 
@@ -27,14 +27,14 @@ The name and the `id` property value should always be the same, and they are the
 
 By this time you should have guessed that the way to bind your new `Command` to your existing `Hello` component is through `HelloContainer`, using more `container` magic.
 
-Specify an array of `commands` you want to be accessible from the props of your component
+Specify an array of `commands` you want to be accessible from the props of your component, and don't forget to add `doRefreshUser: () => Promise<void>` to the `MapProps` type:
 
-```js
-export default container(Hello, {
-  connect: { formal: t.maybe(t.Boolean) },
+```ts
+export default container(noLoaderLoading(Hello))({
+  connect: ['formal'],
   queries: ['user'],
   commands: ['doRefreshUser'],
-  mapProps: ({ transition, formal = false, user, doRefreshUser }) => ({
+  mapProps: ({ transition, formal = false, user, doRefreshUser }: MapProps) => ({
     toggle: () => {
       transition({ formal: !formal });
     },
@@ -42,40 +42,27 @@ export default container(Hello, {
     user,
     onRefreshClick: () => doRefreshUser()
   })
-});
+}) as any as React.ComponentType;
 ```
 
 ## Updating the UI component
 
-The container is now providing an `onRefreshClick` function that is ready to be used in `Hello.js`. Start by adding it to the `@props` object:
+The container is now providing an `onRefreshClick` function that is ready to be used in `Hello.tsx`. Start by adding it to the `Props` type:
 
-```js
-onRefreshClick: t.Function
+```ts
+onRefreshClick: () => Promise<void>
 ```
 
-Then update `getLocals()`:
+Then extract it from `this.props` in the `render` method:
 
-```js
-getLocals({ formal, toggle, user, onRefreshClick }) {
-  const greeting = formal ? formalGreeting() : 'Hello';
-
-  return { greeting, toggle, user, onRefreshClick };
-}
+```ts
+const { formal, toggle, user, onRefreshClick } = this.props;
 ```
 
-And finally your template:
+and render it by adding the following after the `h1` closing tag:
 
-```js
-template({ greeting, toggle, user, onRefreshClick }) {
-  return (
-    <div className='hello'>
-      <h1>
-        <a onClick={toggle}>{greeting}</a> {user}
-      </h1>
-      <a onClick={onRefreshClick}>(refresh)</a>
-    </div>
-  );
-}
+```tsx
+<a onClick={onRefreshClick}>(refresh)</a>
 ```
 
 ## Step4 -> Step5 diff

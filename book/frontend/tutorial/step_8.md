@@ -6,46 +6,47 @@ In our projects we almost always use the (FlexView)[https://github.com/buildo/re
 
 Let's try to do the same here!
 
-First, to make it work, add the corresponding `import` inside the `src/app/theme/index.js` file:
-```js
+First, to make it work, add the corresponding `import` inside the `src/app/theme/index.ts` file:
+
+```ts
 import 'react-flexview/src/flexView.scss';
 ```
+
 if you forget to import this and try to use `FlexView`, you will have a bad time!
 
-You can now import the component in `Hello.js`:
-```js
+You can now import the component in `Hello.tsx`:
+
+```ts
 import FlexView from 'react-flexview';
 ```
 
 And then pimp your layout with it!
 Let's see how easy it is to add two side views to our `Panel` using `FlexView`:
-```js
-template({ greeting, toggle, user, onRefreshClick }) {
-  return (
-    <FlexView className='hello'>
-      <FlexView basis='150' shrink vAlignContent='center' className='side-view'>
-        <h2>I'm the left view!</h2>
+
+```tsx
+<FlexView className='hello'>
+  <FlexView basis='150' shrink vAlignContent='center' className='side-view'>
+    <h2>I'm the left view!</h2>
+  </FlexView>
+  <FlexView className='hello-view' grow>
+    <Panel>
+      <FlexView column hAlignContent='center'>
+        <h1>
+          <a onClick={toggle}>{greeting}</a> {user}
+        </h1>
+        <a onClick={onRefreshClick}>(refresh)</a>
       </FlexView>
-      <FlexView className='hello-view' grow>
-        <Panel>
-          <FlexView column hAlignContent='center'>
-            <h1>
-              <a onClick={toggle}>{greeting}</a> {user}
-            </h1>
-            <a onClick={onRefreshClick}>(refresh)</a>
-          </FlexView>
-        </Panel>
-      </FlexView>
-      <FlexView basis='150' shrink vAlignContent='center' className='side-view'>
-        <h2>I'm the right view!</h2>
-      </FlexView>
-    </FlexView>
-  );
-}
+    </Panel>
+  </FlexView>
+  <FlexView basis='150' shrink vAlignContent='center' className='side-view'>
+    <h2>I'm the right view!</h2>
+  </FlexView>
+</FlexView>
 ```
 
 Add also this in `hello.scss`, inside the `.hello` class:
-```css
+
+```scss
 .side-view {
   margin: 20px;
 }

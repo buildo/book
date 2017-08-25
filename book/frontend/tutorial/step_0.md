@@ -14,16 +14,18 @@ npm start
 
 If everything works, your app should be running at http://localhost:8080/.
 
-Under the hood, this basic project is a very simple React component, which you can find at `src/app/components/Hello/Hello.js`:
+Under the hood, this basic project is a very simple React component, which you can find at `src/app/components/Hello/Hello.tsx`:
 
-```js
-import React from 'react';
+```tsx
+import * as React from 'react';
 import { intlMethods } from 'Basic';
 
 import './hello.scss';
 
 @intlMethods
 export default class Hello extends React.PureComponent {
+
+  formatMessage: (k: string) => string;
 
   render() {
     return (

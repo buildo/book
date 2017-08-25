@@ -22,7 +22,7 @@ export const getUser = () => {
 
 Then define your first `avenger` Query in `src/app/queries.js`:
 
-```javascript
+```js
 import { Query } from 'avenger/lib/graph';
 import { Expire } from 'avenger/lib/cache/strategies';
 import t from 'tcomb';
@@ -38,77 +38,58 @@ export const user = Query({
 
 ## More container magic
 
-In `HelloContainer.js` you can now ask the `container` to bind our `Hello` component to the *Avenger* query you have just created.
+In `HelloContainer.ts` you can now ask the `container` to bind our `Hello` component to the *Avenger* query you have just created.
 
-Invoke `container()` as before, with an additional `queries: ['user']` property. This will add a new `user` property to the input of `mapProps()`.
+Invoke `container` as before, with an additional `queries: ['user']` property. This will add a new `user` property to the input of `mapProps` (remember also to add `user: string` to the `MapProps` type).
 
-```js
-export default container(Hello, {
-  connect: { formal: t.maybe(t.Boolean) },
+```ts
+export default container(Hello)({
+  connect: ['formal'],
   queries: ['user'],
-  mapProps: ({ transition, formal = false, user }) => ({
+  mapProps: ({ transition, formal = false, user }: MapProps) => ({
     toggle: () => {
       transition({ formal: !formal });
     },
     formal,
     user
   })
-});
+}) as any as React.ComponentType;
 ```
 
 ## Updating the UI component
 
-Back in `Hello.js` you just need to reference the new `user` prop.
+Back in `Hello.tsx` you just need to reference the new `user` prop.
 
-Start by adding it to the `@props` list:
+Start by adding it to the `Props` type:
 
-```js
-@props({
-  formal: t.Boolean,
-  toggle: t.Function,
-  user: t.String
-})
+```ts
+ type Props = {
+  //...
+  user: string
+};
 ```
 
-Then make sure `getLocals()` is forwarding it to the `template()` function:
+Then extract it from `this.props` in the `render` method and render it:
 
-```js
-getLocals({ formal, toggle, user }) {
-  const greeting = formal ? formalGreeting() : 'Hello';
-
-  return { greeting, toggle, user };
-}
+```tsx
+const { formal, toggle, user } = this.props;
 ```
 
-And finally render it!
-
-```js
-template({ greeting, toggle, user }) {
-  return (
-    <div className='hello'>
-      <h1>
-        <a onClick={toggle}>{greeting}</a> {user}
-      </h1>
-    </div>
-  );
-}
+```tsx
+<a onClick={toggle}>{greeting}</a> {user}
 ```
 
 ## What to do when waiting for the query data
 
 In this step, we can simply decide to not handle the loading situation (i.e., not notify the user about the fact that we are waiting for the `user` query result).
 
-In the `Hello.js` add the following import:
+In the `HelloContainer.ts` add the following import:
 
-```js
+```ts
 import { noLoaderLoading } from 'react-avenger/lib/loading';
 ```
 
-And the following decorator:
-
-```js
-@noLoaderLoading
-```
+And pass `noLoaderLoading(Hello)` instead of just `Hello` to the `container`.
 
 ## Step3 -> Step4 diff
 
