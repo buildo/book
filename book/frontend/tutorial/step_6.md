@@ -38,7 +38,7 @@ export default LoadingSpinner;
 ```
 
 3. Import its style in the `loadingSpinner.scss` file:
-```css
+```scss
 @import '~buildo-react-components/src/LoadingSpinner/loadingSpinner.scss';
 ```
 
