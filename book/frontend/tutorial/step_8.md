@@ -7,18 +7,22 @@ In our projects we almost always use the (FlexView)[https://github.com/buildo/re
 Let's try to do the same here!
 
 First, to make it work, add the corresponding `import` inside the `src/app/theme/index.ts` file:
+
 ```ts
 import 'react-flexview/src/flexView.scss';
 ```
+
 if you forget to import this and try to use `FlexView`, you will have a bad time!
 
 You can now import the component in `Hello.tsx`:
+
 ```ts
 import FlexView from 'react-flexview';
 ```
 
 And then pimp your layout with it!
 Let's see how easy it is to add two side views to our `Panel` using `FlexView`:
+
 ```tsx
 <FlexView className='hello'>
   <FlexView basis='150' shrink vAlignContent='center' className='side-view'>
@@ -41,6 +45,7 @@ Let's see how easy it is to add two side views to our `Panel` using `FlexView`:
 ```
 
 Add also this in `hello.scss`, inside the `.hello` class:
+
 ```scss
 .side-view {
   margin: 20px;

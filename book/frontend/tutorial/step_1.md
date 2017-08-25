@@ -78,6 +78,7 @@ toggle = () => {
   });
 }
  ```
+
 ## Step0 -> Step1 diff
 
 If you want to see how your `Hello.tsx` component looks after all these changes, check the `Step 1` commit diff [here](https://github.com/buildo/webseed/commits/tutorial).

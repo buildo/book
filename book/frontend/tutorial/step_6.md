@@ -5,11 +5,13 @@ A common pattern for components rendering server data is showing a spinner while
 ## Using the loading helper
 
 Import the loading helper in `Hello.tsx`:
+
 ```ts
 import _loading from 'react-avenger/lib/loading';
 ```
 
 Remove the `noLoaderLoading` usage inside the `HelloContainer`, and use instead `loading` to wrap the `Hello` component (export the wrapped component instead of the `Hello` class):
+
 ```tsx
 const loading = _loading({
   wrapper: <div style={{ textAlign: 'center', position: 'relative', minHeight: 100 }} />,
@@ -23,7 +25,8 @@ export default loading(Hello);
 
 We also have a reusable React component to drop a nicer animated spinner in a matter of seconds. It's part of our suite of shared [react-components](https://github.com/buildo/react-components/). Let's include it in out project by following the [guidelines](../guidelines/5.buildo-react-components.md).
 
-1. Create a `src/app/components/Basic/LoadingSpinner/LoadingSpinner.ts` file:
+Create a `src/app/components/Basic/LoadingSpinner/LoadingSpinner.ts` file:
+
 ```ts
 import './loadingSpinner.scss';
 
@@ -31,24 +34,28 @@ import LoadingSpinner from 'buildo-react-components/lib/LoadingSpinner';
 export default LoadingSpinner;
 ```
 
-2. Export it through an `index.ts` file in the same folder:
+Export it through an `index.ts` file in the same folder:
+
 ```ts
 import LoadingSpinner from './LoadingSpinner';
 export default LoadingSpinner;
 ```
 
-3. Import its style in the `loadingSpinner.scss` file:
+Import its style in the `loadingSpinner.scss` file:
+
 ```scss
 @import '~buildo-react-components/src/LoadingSpinner/loadingSpinner.scss';
 ```
 
-4. Make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.ts`:
+Make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.ts`:
+
 ```ts
 import LoadingSpinner from './LoadingSpinner';
 export { LoadingSpinner };
 ```
 
 We can now import it in the `Hello.tsx` component as follows:
+
 ```ts
 import { LoadingSpinner } from 'Basic';
 ```

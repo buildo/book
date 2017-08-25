@@ -9,6 +9,7 @@ In this step we will improve the UI of our beloved `Hello` component using the b
 Let's perform the same steps that we did previously for the loading spinner, but this time adding some customization on top of the standard b-r-c component:
 
 Create a `src/app/components/Basic/Panel/Panel.tsx` file as follows:
+
 ```tsx
 import * as React from 'react';
 import { default as BRCPanel, PanelProps } from 'buildo-react-components/lib/Panel/Panel';
@@ -48,12 +49,14 @@ To do it, we had to do some TypeScript magic:
 In this way we exposed the properties we defaulted as optional, no matter if they were such or not in the `BRCPanel` component: we gave `type` a value and made the `type` prop optional, so that it can be overridden but it doesn't have to.
 
 Now, export the component through an `index.ts` file in the same folder:
+
 ```ts
 import Panel from './Panel';
 export default Panel;
 ```
 
 and import its style in the `panel.scss` file, customizing it using the SASS interface:
+
 ```scss
 @import '~theme/variables.scss';
 
@@ -70,9 +73,11 @@ $content-background: $cloud;
   }
 }
 ```
+
 We just overridden its default background color, via sass variables override, and customized its border and shadow.
 
 Eventually, make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.ts`:
+
 ```ts
 import Panel from './Panel';
 export { Panel };
@@ -82,11 +87,13 @@ export { Panel };
 
 Let's now sorround the `Hello` div with a `Panel`.
 We can import it from `Basic`:
+
 ```ts
 import { LoadingSpinner, Panel } from 'Basic';
 ```
 
 And then use it directly in the `render` method:
+
 ```tsx
 <Panel className='hello'>
   <div>
@@ -100,6 +107,7 @@ And then use it directly in the `render` method:
 
 You will see that the layout still has some problems.
 We need to adjust the `hello.scss` file:
+
 ```scss
 .hello {
   div {
@@ -110,6 +118,7 @@ We need to adjust the `hello.scss` file:
 ```
 
 And the `src/app/theme/main.scss`:
+
 ```scss
 .layout,
 .layout > div {
