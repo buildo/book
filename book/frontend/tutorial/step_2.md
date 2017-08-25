@@ -31,7 +31,7 @@ export default container(Hello)({
 
 There is some magic here, but the important thing to note is we use the `container` helper to wrap our `Hello` component, providing a `mapProps` function. The input of this function is a rich set of properties, including the `transition` function we discussed in the previous step. The output is a minimal set of stateless properties that are required by the UI component.
 
-## Back to Hello.js
+## Back to Hello.tsx
 
 We can now simplify our UI component to this:
 
@@ -68,7 +68,7 @@ Notice how we removed any reference to `connect` or `transition`. Also, the comp
 
 ## Checking it all works
 
-Modify the `index.js` file in the same folder to make it export the container instead of the component itself:
+Modify the `index.ts` file in the same folder to make it export the container instead of the component itself:
 
 ```ts
 import HelloContainer from './HelloContainer';
