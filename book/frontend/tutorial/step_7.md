@@ -13,40 +13,31 @@ Create a `src/app/components/Basic/Panel/Panel.tsx` file as follows:
 ```tsx
 import * as React from 'react';
 import { default as BRCPanel, PanelProps } from 'buildo-react-components/lib/Panel/Panel';
-import { ObjectOmit } from 'typelevel-ts';
 
 import './panel.scss';
 
 type DefaultProps = {
   type: PanelProps['type']
-};
-
-type RequiredProps = ObjectOmit<PanelProps, keyof DefaultProps>;
-
-type Props = Partial<DefaultProps> & RequiredProps;
+}
 
 const defaultProps: DefaultProps = {
-  type: 'docked-top'
-};
+  type: "docked-top"
+}
 
-export default class Panel extends React.PureComponent<Props> {
-
-  getProps() {
-    return { ...defaultProps, ...this.props };
-  }
+export default class Panel extends React.PureComponent<PanelProps> {
 
   render() {
-    return <BRCPanel {...this.getProps()} />;
+    const panelProps = {
+      ...defaultProps,
+      ...this.props
+    };
+    return <BRCPanel {...panelProps} />;
   }
 
 }
 ```
-In this way we already customized the `BRCPanel` by saying that we want the `Basic` `Panel` of this project to always be `docked-top`.
-To do it, we had to do some TypeScript magic:
-1. We defined the `DefaultProps` type, to tell TypeScript that the `defaultProps` that we are defining here (only `type` in this case) have the same type of the corresponding `Panel` properties (extracted from `PanelProps`)
-2. Omit `DefaultProps` from `PanelProps` and re-add them to the same type by making them optional thanks to `Partial`, as follows: `type Props = Partial<DefaultProps> & RequiredProps;`. `Partial` makes all properties of a type optional
 
-In this way we exposed the properties we defaulted as optional, no matter if they were such or not in the `BRCPanel` component: we gave `type` a value and made the `type` prop optional, so that it can be overridden but it doesn't have to.
+In this way we already customized the `BRCPanel` by saying that we want the `Basic` `Panel` of this project to always be `docked-top`.
 
 Now, export the component through an `index.ts` file in the same folder:
 
@@ -76,7 +67,7 @@ $content-background: $cloud;
 
 We just overridden its default background color, via sass variables override, and customized its border and shadow.
 
-Eventually, make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.ts`:
+Finally, make it part of our set of Basic, reusable, components, by adding a line to `src/app/components/Basic/index.ts`:
 
 ```ts
 import Panel from './Panel';

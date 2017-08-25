@@ -25,7 +25,7 @@ import './hello.scss';
 @intlMethods
 export default class Hello extends React.PureComponent {
 
-  formatMessage: (k: string) => string; // TODO: typo
+  formatMessage: (k: string) => string;
 
   render() {
     return (

@@ -35,7 +35,7 @@ render() {
 ```
 
 Notice how we extracted the references to `this.props` from the render method: it is a good practice to separate the UI and the internal logic of the component,
-so that the render method is as clean as possible and only references previously defined constants.
+so that the render method is as clean as possible and the JSX only references previously defined constants.
 
 ## Step2 -> Step3 diff
 

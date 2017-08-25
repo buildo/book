@@ -49,7 +49,7 @@ type Props = {
 @intlMethods
 export default class Hello extends React.PureComponent<Props> {
 
-  formatMessage: (k: string) => string; // TODO: typo
+  formatMessage: (k: string) => string;
 
   render() {
     return (
