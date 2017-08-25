@@ -1,51 +1,10 @@
 # Step 3
 
-You have probably noticed that our component has a bug: it says "Good morning" at any time of the day. This is a good example of a small amount of logic you often need in your UI components.
+You have probably noticed that our component has a bug: it says "Good morning" at any time of the day. This is a good example of a small amount of logic you often need in your UI components, and that you don't want to put in the container since it does not rely on the app state or on some external props.
 
-To maintain things tidy and easy to test, [react-skinnable](https://github.com/buildo/react-skinnable) provides the `@skinnable` decorator. Let's import it and add it to our component:
+Let's implement a naive way to generate the correct greeting (you should define this outside the component, since there is no reason to put it inside it):
 
-```js
-import skinnable from 'react-skinnable';
-```
-
-```js
-@skinnable()
-@props({
-  formal: t.Boolean,
-  toggle: t.Function
-})
-export default class Hello extends React.PureComponent {
-```
-
-The new decorator requires your component to implement two methods:
-
-1. `template()`, which will replace your `render()` method, and receive an object containing the properties it needs
-
-```js
-template({ greeting, toggle }) {
-  return (
-    <div className='hello'>
-      <h1>
-        <a onClick={toggle}>{greeting}</a>
-      </h1>
-    </div>
-  );
-}
-```
-
-2. `getLocals()`, which will contain the logic and return the object expected by the `template()` method above
-
-```js
-getLocals({ formal, toggle }) {
-  const greeting = formal ? formalGreeting() : 'Hello';
-
-  return { greeting, toggle };
-}
-```
-
-Finally, let's implement a naive way to generate the correct greeting (you should define this outside the component, since there is no reason to put it inside it):
-
-```js
+```ts
 function formalGreeting() {
   const hours = new Date().getHours();
   if (hours > 20) {
@@ -58,18 +17,25 @@ function formalGreeting() {
 }
 ```
 
-## Testing getLocals()
+and let's use it in the render method as follows:
 
-One big win of using this approach is that it is now trivial to test the behaviour of this component without rendering DOM elements:
+```tsx
+render() {
+  const { formal, toggle } = this.props;
+  const greeting = formal ? formalGreeting() : 'Hello';
 
-```js
-const props = { formal: false, toggle: () => {} };
-const instance = new Hello(props);
-const { greeting } = instance.getLocals(props);
-expect(greeting).toBe("Hello");
+  return (
+    <div className='hello'>
+      <h1>
+        <a onClick={toggle}>{greeting}</a>
+      </h1>
+    </div>
+  );
+}
 ```
 
-It is not something we often do in practite, but it's still good to know.
+Notice how we extracted the references to `this.props` from the render method: it is a good practice to separate the UI and the internal logic of the component,
+so that the render method is as clean as possible and only references previously defined constants.
 
 ## Step2 -> Step3 diff
 
