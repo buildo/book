@@ -8,8 +8,8 @@ You should be able to do:
 ```sh
 git clone https://github.com/buildo/webseed
 cd webseed
-npm i
-npm start
+yarn i
+yarn start
 ```
 
 If everything works, your app should be running at http://localhost:8080/.
