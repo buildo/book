@@ -20,7 +20,7 @@ export const getUser = () => {
 };
 ```
 
-Then define your first `avenger` Query in `src/app/queries.js`:
+Then define your first `avenger` Query in `src/app/queries/queries.js`:
 
 ```js
 import { Query } from 'avenger/lib/graph';
