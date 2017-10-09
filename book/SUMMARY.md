@@ -25,6 +25,7 @@
     * [buildo-react-components](frontend/guidelines/4.buildo-react-components.md)
     * [Scripts](frontend/guidelines/5.scripts.md)
     * [tcomb](frontend/guidelines/6.tcomb.md)
+    * [Architecture overview](frontend/guidelines/7.architecture.md)
   * [Tutorial](frontend/5.tutorial.md)
     * [Step 0](frontend/tutorial/step_0.md)
     * [Step 1](frontend/tutorial/step_1.md)
