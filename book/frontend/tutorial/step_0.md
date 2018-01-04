@@ -8,7 +8,7 @@ You should be able to do:
 ```sh
 git clone https://github.com/buildo/webseed
 cd webseed
-yarn i
+yarn
 yarn start
 ```
 
